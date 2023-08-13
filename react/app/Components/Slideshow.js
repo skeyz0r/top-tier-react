@@ -15,32 +15,7 @@ const sarala = Sarala({
 
 export default function Slideshow() {
 
-    
-      const [img, setImg] = useState(1);
-    
-   function left()
-   {
-    if(img === 1)
-    {
-      setImg(6)
-    }
-    else
-    {
-      setImg(img - 1)
-    }
-   }
-
-   function right()
-   {
-    if(img === 6)
-    {
-      setImg(1)
-    }
-    else
-    {
-      setImg(img + 1)
-    }
-   }
+ 
     
       return (
         <section className="mb-[100px]">
