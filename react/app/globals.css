@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card:hover{
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.512);
+}
+
+.imgd{
+    background-size:cover;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
