@@ -26,6 +26,7 @@ return(
   <div className="flex gap-16 justify-center mt-14 flex-wrap">
       <div className="flex flex-col items-center gap-2">
         <Image
+        alt="freeQuoteImg"
           src={'/free.svg'}
           width={80}
           height={80} />
@@ -35,6 +36,7 @@ return(
 
       <div className="flex flex-col items-center gap-2">
         <Image
+         alt="refundImg"
           src={'/refund.svg'}
           width={80}
           height={80} />
@@ -45,6 +47,7 @@ return(
 
       <div className="flex flex-col items-center gap-2">
         <Image
+        alt="flexPayImg"
           className="mb-2"
           src={'/pay.svg'}
           width={70}
@@ -56,6 +59,7 @@ return(
 
       <div className="flex flex-col items-center gap-2">
         <Image
+        alt="satImg"
           src={'/happy.svg'}
           width={80}
           height={80} />
