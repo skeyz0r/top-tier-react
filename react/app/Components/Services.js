@@ -32,45 +32,45 @@ export default function Services() {
       <div className="card  bg-black rounded-md w-fit flex flex-col justify-center items-center cursor-pointer  ">
         <Image
         alt="houseServImg"
-        className="crdimg rounded-md  h-full"
+        className="crdimg rounded-t-md  h-full"
           src={'/services/houseServ.jpg'}
           width={300}
           height={500}
         />
-        <h2 className={`${dmsans.className} text-white text-2xl`}>House Services</h2>
+        <h2 className={`${dmsans.className} text-white py-1 text-2xl`}>House Services</h2>
       </div>
 
       <div className="card  bg-black rounded-md w-fit flex flex-col justify-center items-center cursor-pointer  ">
         <Image
         alt="landServImg"
-        className="crdimg rounded-md  h-full"
+        className="crdimg rounded-t-md  h-full"
           src={'/services/landscapping.jpg'}
           width={300}
           height={500}
         />
-        <h2 className={`${dmsans.className} text-white text-2xl`}>Landscaping</h2>
+        <h2 className={`${dmsans.className} py-1 text-white text-2xl`}>Landscaping</h2>
       </div>
 
       <div className="bg-black card rounded-md w-fit flex flex-col justify-center items-center cursor-pointer  ">
         <Image
         alt="comServImg"
-        className="crdimg rounded-md  h-full"
+        className="crdimg rounded-t-md  h-full"
           src={'/services/comServ.jpg'}
           width={300}
           height={500}
         />
-        <h2 className={`${dmsans.className} text-white text-2xl`}>Commercial Services</h2>
+        <h2 className={`${dmsans.className} py-1 text-white text-2xl`}>Commercial Services</h2>
       </div>
 
       <div className="card  bg-black rounded-md w-fit flex flex-col justify-center items-center cursor-pointer  ">
         <Image
         alt="plowServImg"
-        className="crdimg rounded-md  h-full"
+        className="crdimg rounded-t-md  h-full"
           src={'/services/plowImg.jpg'}
           width={300}
           height={500}
         />
-        <h2 className={`${dmsans.className} text-white text-2xl`}>Plowing Services</h2>
+        <h2 className={`${dmsans.className} py-1 text-white text-2xl`}>Plowing Services</h2>
       </div>
 
     </div>
