@@ -87,9 +87,10 @@ export default function Services() {
                <h2 className={`${raleway.className} md:text-2xl max-w-hd py-3`}><strong> Top Tier Services LLC</strong> - we are your trusted partner for transforming spaces and ensuring they shine in their best light. 
                 Our comprehensive range of services is designed to cater to all your property needs, from intricate house repairs to crafting picturesque landscapes, and even maintaining pristine cleanliness. 
                 With a keen eye for detail and a commitment to excellence, we take your vision and turn it into reality.</h2>
-              <h2 className={`${rubik.className} pl-4 py-5 text-lg md:text-2xl`}><strong>Our services include:</strong></h2>
-
-              <div className="flex gap-2 justify-between flex-wrap w-[70%] self-center">
+              
+              <h2 className={`${rubik.className} pl-4 mt-9 py-5 text-lg md:text-2xl`}><strong>Our services include:</strong></h2>
+              
+              <div className="flex gap-2 mb-9 justify-between flex-wrap xxl:w-[70%] self-center">
               <div className="py-3 max-w-[600px]">
               <h3 className={`${dmsans.className}`}>House Repair Expertise:</h3>
 <p>From minor fixes to major renovations, our skilled handymen are equipped to handle a wide spectrum of house repair services. 
