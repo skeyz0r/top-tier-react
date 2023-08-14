@@ -11,12 +11,10 @@ const sarala = Sarala({
   subsets: ['latin'],
 })
 
-
-/* Hooks */
-const [img, setImg] = useState(1);
-
-
 export default function Slideshow() {
+
+  const [img, setImg] = useState(1);
+
       return (
         <section className="mb-[100px]">
         <div className='max-w-[1000px] h-[730px] w-full m-auto py-16 px-4 relative group'>
