@@ -25,8 +25,8 @@ export default function Services() {
    <section className="flex flex-col w-11/12 self-center shadow-mainsh">
         <div className="flex flex-col justify-center items-center w-full imgd rounded-rb bg-[url('../public/image.jpg')] h-500px">
       <h1 className={`${rubik.className} text-white  text-3xl md:text-6xl brightness-100 tracking-wider`}>TOP TIERS SERVICES</h1>
-            <span className="text-white md:text-xl mt-3">We pride ourselves on our attention to detail</span>
-            <span className="text-white  md:text-xl"> and our commitment to providing excellent customer service.</span>
+            <span className="text-white md:self-center md:text-xl mt-3">We pride ourselves on our attention to detail</span>
+            <span className="text-white md:self-center md:text-xl"> and our commitment to providing excellent customer service.</span>
         </div>
     <div className="flex flex-wrap gap-10 shadow-mainsh justify-center md:justify-evenly py-12 px-6">
       <div className="card  bg-black rounded-md w-fit flex flex-col justify-center items-center cursor-pointer  ">
