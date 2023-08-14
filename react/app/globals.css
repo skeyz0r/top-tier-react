@@ -14,4 +14,10 @@
     background-position: center;
 }
 
+@media(max-width: 800px)
+{
+ .imgd{
+  background-attachment: unset;
+ }
+}
 
