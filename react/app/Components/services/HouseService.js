@@ -14,7 +14,7 @@ const poppinsL = Poppins({
     subsets: ['latin']
 })
 
-export default function()
+export default function House()
 {
     return(
         <section className={`pt-20 flex flex-col`}>
