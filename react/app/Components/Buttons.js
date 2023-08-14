@@ -9,7 +9,7 @@ const dmsans = DM_Sans({
 export default function Buttons()
 {
     return(
-    <div className="flex my-20 gap-16 justify-center  flex-wrap">
+    <div className="flex my-10 gap-16 justify-center py-10 flex-wrap">
         <div className="flex flex-col items-center gap-2">
           <Image
           alt="quoteImg"
@@ -17,7 +17,8 @@ export default function Buttons()
             width={80}
             height={80} />
           <h2 className={`${dmsans.className} text-2xl`}>FREE QUOTE</h2>
-          <span className="text-gray-400">Free qoutes on any selecte services.</span> <span className="text-gray-400">Toll-Free call to get a quote now!</span>
+          <span className="text-gray-500">Free qoutes on any selecte services.</span> 
+          <span className="text-gray-500">Toll-Free call to get a quote now!</span>
         </div>
 
         <div className="flex flex-col items-center gap-2">
@@ -27,7 +28,7 @@ export default function Buttons()
             width={80}
             height={80} />
           <h2 className={`${dmsans.className} text-2xl`}>REFUND</h2>
-          <span className="text-gray-400">Money back guaranteed, damage coverage</span> <span className="text-gray-400"> from any selected services</span>
+          <span className="text-gray-500">Money back guaranteed, damage coverage</span> <span className="text-gray-500"> from any selected services</span>
         </div>
 
 
@@ -39,7 +40,7 @@ export default function Buttons()
             width={70}
             height={70} />
           <h2 className={`${dmsans.className} text-2xl`}>FLEXIBLE PAYMENTS</h2>
-          <span className="text-gray-400">Pay with the world’s most popular and secure </span> <span className="text-gray-400">payment methods.</span>
+          <span className="text-gray-500">Pay with the world’s most popular and secure </span> <span className="text-gray-500">payment methods.</span>
         </div>
 
 
@@ -50,7 +51,7 @@ export default function Buttons()
             width={80}
             height={80} />
           <h2 className={`${dmsans.className} text-2xl`}>100% SATISFACTION</h2>
-          <p className=" text-gray-400">100% customer satisfaction</p>
+          <p className=" text-gray-500">100% customer satisfaction</p>
         </div>
       </div>
 

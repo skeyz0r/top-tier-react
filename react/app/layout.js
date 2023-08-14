@@ -1,5 +1,6 @@
 import './globals.css'
 import Navigator from './Components/Navigator'
+import Footer from './Components/Footer'
 
 export const metadata = {
   title: 'Top Tier Services LLC | Landscaping | Plowing | Construction Services in Wiscosin.',
@@ -11,7 +12,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
       <Navigator/>  
-      {children}</body>
+      {children}
+      <Footer/>
+      </body>
     </html>
   )
 }

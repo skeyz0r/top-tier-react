@@ -11,6 +11,5 @@ export default function Home() {
       <Services/>
       <Buttons/>
       <Slideshow/>
-      <Footer/>
       </main>
       )}

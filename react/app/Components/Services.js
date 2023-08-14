@@ -1,5 +1,6 @@
 
 import Image from "next/image"
+import Link from "next/link"
 import { DM_Sans, Raleway } from "next/font/google"
 import { Rubik } from "next/font/google"
 
@@ -29,49 +30,49 @@ export default function Services() {
             <span className="text-white md:self-center md:text-xl"> and our commitment to providing excellent customer service.</span>
         </div>
     <div className="flex flex-wrap gap-10 shadow-mainsh justify-center md:justify-evenly py-12 px-6">
-      <div className="card  bg-black rounded-md w-fit flex flex-col justify-center items-center cursor-pointer  ">
+     <Link href={'/services/house-service'}  className="card  bg-black rounded-md w-fit flex flex-col justify-center items-center   ">
         <Image
         alt="houseServImg"
         className="crdimg rounded-t-md  h-full"
           src={'/services/houseServ.jpg'}
-          width={300}
-          height={500}
+          width={254}
+          height={350}
         />
         <h2 className={`${dmsans.className} text-white py-1 text-2xl`}>House Services</h2>
-      </div>
+      </Link>
 
-      <div className="card  bg-black rounded-md w-fit flex flex-col justify-center items-center cursor-pointer  ">
+     <Link href={'/services/HouseService'}  className="card  bg-black rounded-md w-fit flex flex-col justify-center items-center   ">
         <Image
         alt="landServImg"
         className="crdimg rounded-t-md  h-full"
           src={'/services/landscapping.jpg'}
-          width={300}
-          height={500}
+          width={254}
+          height={350}
         />
         <h2 className={`${dmsans.className} py-1 text-white text-2xl`}>Landscaping</h2>
-      </div>
+      </Link>
 
-      <div className="bg-black card rounded-md w-fit flex flex-col justify-center items-center cursor-pointer  ">
+      <Link href={'/services/house-service'} className="bg-black card rounded-md w-fit flex flex-col justify-center items-center   ">
         <Image
         alt="comServImg"
         className="crdimg rounded-t-md  h-full"
           src={'/services/comServ.jpg'}
-          width={300}
-          height={500}
+          width={254}
+          height={350}
         />
         <h2 className={`${dmsans.className} py-1 text-white text-2xl`}>Commercial Services</h2>
-      </div>
+      </Link>
 
-      <div className="card  bg-black rounded-md w-fit flex flex-col justify-center items-center cursor-pointer  ">
+     <Link href={'/services/HouseService'}  className="card  bg-black rounded-md w-fit flex flex-col justify-center items-center   ">
         <Image
         alt="plowServImg"
         className="crdimg rounded-t-md  h-full"
           src={'/services/plowImg.jpg'}
-          width={300}
-          height={500}
+          width={254}
+          height={350}
         />
         <h2 className={`${dmsans.className} py-1 text-white text-2xl`}>Plowing Services</h2>
-      </div>
+      </Link>
 
     </div>
 
@@ -111,8 +112,8 @@ Experience the joy of pristine environments that invigorate your senses and crea
 
             </div>
 
-            <div className="pt-4 lg:w-2/3 pl-4 lg:pl-14">
-            <h2 className={`${rubik.className} pl-4 py-5 text-lg md:text-2xl`}><strong>Why choose us?</strong></h2>
+            <div className="pt-4 lg:w-2/3 pl-4 ">
+            <h2 className={`${rubik.className} pl-6 py-5 text-lg md:text-2xl`}><strong>Why choose us?</strong></h2>
                 <p>Top Tier Services LLC doesn't just provide services – we craft experiences.
                  With a dedication to quality, an eye for detail, and a passion for perfection, we take your visions and turn them into reality.
                  Our team of experts is committed to delivering results that exceed your expectations, every time.</p>
