@@ -4,6 +4,7 @@ import Link from "next/link"
 import { DM_Sans, Raleway } from "next/font/google"
 import { Rubik } from "next/font/google"
 
+/* fonts */
 const dmsans = DM_Sans({
   weight: '700',
   subsets: ['latin'],
@@ -24,11 +25,15 @@ const rubik = Rubik({
 export default function Services() {
   return (
    <section className="flex flex-col w-11/12 self-center shadow-mainsh">
+
+
+
         <div className="flex flex-col justify-center items-center w-full imgd rounded-rb bg-[url('../public/image.jpg')] h-500px">
       <h1 className={`${rubik.className} text-white  text-3xl md:text-6xl brightness-100 tracking-wider`}>TOP TIERS SERVICES</h1>
             <span className="text-white md:self-center md:text-xl mt-3">We pride ourselves on our attention to detail</span>
             <span className="text-white md:self-center md:text-xl"> and our commitment to providing excellent customer service.</span>
         </div>
+
     <div className="flex flex-wrap gap-10 shadow-mainsh justify-center md:justify-evenly py-12 px-6">
      <Link href={'/services/house-service'}  className="card  bg-black rounded-md w-fit flex flex-col justify-center items-center   ">
         <Image
@@ -78,13 +83,13 @@ export default function Services() {
 
 
 
-    <div className="py-6 px-3">
-               <h2 className={`${raleway.className} md:text-2xl py-3`}><strong> Top Tier Services LLC</strong> - we are your trusted partner for transforming spaces and ensuring they shine in their best light. 
+    <div className="py-6 px-3 flex flex-col">
+               <h2 className={`${raleway.className} md:text-2xl max-w-hd py-3`}><strong> Top Tier Services LLC</strong> - we are your trusted partner for transforming spaces and ensuring they shine in their best light. 
                 Our comprehensive range of services is designed to cater to all your property needs, from intricate house repairs to crafting picturesque landscapes, and even maintaining pristine cleanliness. 
                 With a keen eye for detail and a commitment to excellence, we take your vision and turn it into reality.</h2>
               <h2 className={`${rubik.className} pl-4 py-5 text-lg md:text-2xl`}><strong>Our services include:</strong></h2>
-              <div className="flex gap-2 justify-evenly flex-wrap">
 
+              <div className="flex gap-2 justify-between flex-wrap w-[70%] self-center">
               <div className="py-3 max-w-[600px]">
               <h3 className={`${dmsans.className}`}>House Repair Expertise:</h3>
 <p>From minor fixes to major renovations, our skilled handymen are equipped to handle a wide spectrum of house repair services. 
