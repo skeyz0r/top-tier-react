@@ -24,7 +24,7 @@ export default function Navigator() {
                     </div>
                     <div className="flex items-center gap-3 md:gap-9">
         <h3 className={`${opens.className} md:text-2xl py-3`}>1 (920)-636-08-31</h3>
-        <Link href={''}><GrFacebook size={30} color={'blue'}/></Link>
+        <Link target="_blank" href={'https://www.facebook.com/groups/801973678237251'}><GrFacebook size={30} color={'blue'}/></Link>
         </div>
     </nav>
   )
