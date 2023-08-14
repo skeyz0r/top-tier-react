@@ -110,7 +110,16 @@ Experience the joy of pristine environments that invigorate your senses and crea
             </div>
 
             </div>
+
+            <div className="pt-4 lg:w-2/3 pl-4 lg:pl-14">
+            <h2 className={`${rubik.className} pl-4 py-5 md:text-2xl`}><strong>Why choose us?</strong></h2>
+                <p>Top Tier Services LLC doesn't just provide services – we craft experiences.
+                 With a dedication to quality, an eye for detail, and a passion for perfection, we take your visions and turn them into reality.
+                 Our team of experts is committed to delivering results that exceed your expectations, every time.</p>
             </div>
+            </div>
+    
+
    </section>
   )
 }
