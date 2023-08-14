@@ -81,7 +81,7 @@ export default function Services() {
                <h2 className={`${raleway.className} md:text-2xl py-3`}><strong> Top Tier Services LLC</strong> - we are your trusted partner for transforming spaces and ensuring they shine in their best light. 
                 Our comprehensive range of services is designed to cater to all your property needs, from intricate house repairs to crafting picturesque landscapes, and even maintaining pristine cleanliness. 
                 With a keen eye for detail and a commitment to excellence, we take your vision and turn it into reality.</h2>
-              <h2 className={`${rubik.className} pl-4 py-5 md:text-2xl`}><strong>Our services include:</strong></h2>
+              <h2 className={`${rubik.className} pl-4 py-5 text-lg md:text-2xl`}><strong>Our services include:</strong></h2>
               <div className="flex gap-2 justify-evenly flex-wrap">
 
               <div className="py-3 max-w-[600px]">
@@ -112,7 +112,7 @@ Experience the joy of pristine environments that invigorate your senses and crea
             </div>
 
             <div className="pt-4 lg:w-2/3 pl-4 lg:pl-14">
-            <h2 className={`${rubik.className} pl-4 py-5 md:text-2xl`}><strong>Why choose us?</strong></h2>
+            <h2 className={`${rubik.className} pl-4 py-5 text-lg md:text-2xl`}><strong>Why choose us?</strong></h2>
                 <p>Top Tier Services LLC doesn't just provide services – we craft experiences.
                  With a dedication to quality, an eye for detail, and a passion for perfection, we take your visions and turn them into reality.
                  Our team of experts is committed to delivering results that exceed your expectations, every time.</p>
