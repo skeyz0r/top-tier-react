@@ -39,8 +39,8 @@ export default function Services() {
             <span className="text-white md:text-xl"> and our commitment to providing excellent customer service.</span>
         </div>
 
-    <div className="flex flex-wrap gap-10 shadow-mainsh  md:justify-evenly py-12 px-6">
-     <Link href={'/services/house-service'}  className={`${comfortaa.className} card text-lg text-blue-800 hover:underline rounded-md  `}>
+    <div className="flex flex-wrap gap-10 shadow-mainsh justify-evenly py-12 px-6">
+     <Link href={'/services/house-service'}  className={`${comfortaa.className} card text-lg text-blue-800 hover:underline my-6 rounded-md  `}>
         <Image
         alt="houseServImg"
         className="crdimg rounded-md shadow-card h-full mb-3"
@@ -51,7 +51,7 @@ export default function Services() {
       House Services
       </Link>
 
-     <Link href={'/services/HouseService'}  className={`${comfortaa.className} card text-lg text-blue-800 hover:underline rounded-md  `}>
+     <Link href={'/services/HouseService'}  className={`${comfortaa.className} card text-lg text-blue-800 hover:underline my-6 rounded-md  `}>
         <Image
         alt="landServImg"
         className="crdimg rounded-md shadow-card h-full mb-3"
@@ -62,7 +62,7 @@ export default function Services() {
         Landscaping
       </Link>
 
-      <Link href={'/services/house-service '} className={`${comfortaa.className} card text-lg text-blue-800 hover:underline rounded-md  `}>
+      <Link href={'/services/house-service '} className={`${comfortaa.className} card text-lg text-blue-800 hover:underline my-6 rounded-md  `}>
         <Image
         alt="comServImg"
         className="crdimg rounded-md shadow-card h-full mb-3"
@@ -73,7 +73,7 @@ export default function Services() {
     Commercial Services
       </Link>
 
-     <Link href={'/services/HouseService'}  className={`${comfortaa.className} card text-lg text-blue-800 hover:underline rounded-md  `}>
+     <Link href={'/services/HouseService'}  className={`${comfortaa.className} card text-lg text-blue-800 hover:underline my-6 rounded-md  `}>
         <Image
         alt="plowServImg"
         className="crdimg rounded-md shadow-card h-full mb-3"
