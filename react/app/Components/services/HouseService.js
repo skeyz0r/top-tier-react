@@ -34,7 +34,7 @@ export default function House()
                 <h1 className={`text-3xl ml-[6%] ${poppinsB.className} mt-10 `} >House Services</h1>
                     <h2 className={` md:text-xl ml-[4%] ${poppinsL.className} mt-4 mb-7 `}>Top Tier House and Handyman Services - Elevating Homes through Excellence</h2>
 
-        <div className="flex justify-between flex-col md:flex-row">
+        <div className="flex md:justify-between flex-wrap justify-center">
         <div className="flex flex-col gap-5 my-9 ml-[2%]">
 
                     <h3 className={`${poppinsL.className} text-xl`}>List of Top Tier House Services:</h3>
@@ -52,7 +52,7 @@ export default function House()
 </ul>        
 </div>
 
-<div className="md:mt-[5%] md:mr-[5%] min-w-fit">
+<div className="md:mt-[5%] md:mr-[5%] w-fit mb-11 md:mb-0">
 <h1 className={`${poppinsB.className} border-8 py-3 px-2 border-solid border-navYellow text-3xl`}>GET FREE QUOTE!</h1>
 <h2 className={`${poppinsB.className} text-center border-8 py-3 px-2 border-solid border-navYellow text-xl`}>1 (920)-636-08-31</h2>
 </div>
