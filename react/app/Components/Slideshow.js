@@ -1,37 +1,94 @@
 'use client'
 
-import { useState } from "react"
-import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
-import { Sarala } from "next/font/google"
-import Image from "next/image";
-
-/* fonts */
-const sarala = Sarala({
-  weight: '400',
-  subsets: ['latin'],
-})
+import React, { useState } from "react"
+import { useKeenSlider } from "keen-slider/react"
+import "keen-slider/keen-slider.min.css"
+import "./styles.css"
 
 export default function Slideshow() {
+  const [currentSlide, setCurrentSlide] = useState(0)
+  const [loaded, setLoaded] = useState(false)
+  const [sliderRef, instanceRef] = useKeenSlider({
+    initial: 0,
+    slideChanged(slider) {
+      setCurrentSlide(slider.track.details.rel)
+    },
+    created() {
+      setLoaded(true)
+    },
+  })
 
-  const [img, setImg] = useState(1);
-
-      return (
-        <section className="mb-[100px]">
-        <div className='max-w-[1000px] h-[730px] w-full m-auto py-16 px-4 relative group'>
-        <h1 className={`${sarala.className} text-6xl  mb-14`}>Gallery</h1>
-          <div className="flex items-center transition-all">
-            <BsChevronCompactLeft color="white" className="absolute rounded-lg select-none bg-black left-4 md:left-0 md:relative cursor-pointer" onClick={()=>{img == 1 ? setImg(6) : setImg(img - 1) }} size={30}/>
-            <Image className="w-full object-contain h-[500px]"
-            src={`/slides/${img}.jpg`}
-              width={500}
-              height={500}
-            />
-            <BsChevronCompactRight color="white" className="absolute right-4 select-none md:right-0 md:relative cursor-pointer border border-solid rounded-lg bg-black border-black" onClick={()=>{img == 6 ? setImg(1) : setImg(img + 1) }}  size={30}/>
-          </div>
+  return (
+    <>
+      <div className="navigation-wrapper">
+        <div ref={sliderRef} className="keen-slider">
+          <div className="keen-slider__slide number-slide1">1</div>
+          <div className="keen-slider__slide number-slide2">2</div>
+          <div className="keen-slider__slide number-slide3">3</div>
+          <div className="keen-slider__slide number-slide4">4</div>
+          <div className="keen-slider__slide number-slide5">5</div>
+          <div className="keen-slider__slide number-slide6">6</div>
         </div>
-        </section>
+        {loaded && instanceRef.current && (
+          <>
+            <Arrow
+              left
+              onClick={(e) =>
+                e.stopPropagation() || instanceRef.current?.prev()
+              }
+              disabled={currentSlide === 0}
+            />
 
-      );
-    }
-              
-  
+            <Arrow
+              onClick={(e) =>
+                e.stopPropagation() || instanceRef.current?.next()
+              }
+              disabled={
+                currentSlide ===
+                instanceRef.current.track.details.slides.length - 1
+              }
+            />
+          </>
+        )}
+      </div>
+      {loaded && instanceRef.current && (
+        <div className="dots">
+          {[
+            ...Array(instanceRef.current.track.details.slides.length).keys(),
+          ].map((idx) => {
+            return (
+              <button
+                key={idx}
+                onClick={() => {
+                  instanceRef.current?.moveToIdx(idx)
+                }}
+                className={"dot" + (currentSlide === idx ? " active" : "")}
+              ></button>
+            )
+          })}
+        </div>
+      )}
+    </>
+  )
+}
+
+function Arrow(props) {
+  const disabeld = props.disabled ? " arrow--disabled" : ""
+  return (
+    <svg
+      onClick={props.onClick}
+      className={`arrow ${
+        props.left ? "arrow--left" : "arrow--right"
+      } ${disabeld}`}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+    >
+      {props.left && (
+        <path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" />
+      )}
+      {!props.left && (
+        <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" />
+      )}
+    </svg>
+  )
+}
