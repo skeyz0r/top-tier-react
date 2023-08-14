@@ -1,7 +1,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { DM_Sans, Raleway } from "next/font/google"
+import { DM_Sans, Raleway, Comfortaa } from "next/font/google"
 import { Rubik } from "next/font/google"
 
 /* fonts */
@@ -9,6 +9,11 @@ const dmsans = DM_Sans({
   weight: '700',
   subsets: ['latin'],
 })
+
+const comfortaa = Comfortaa({
+    weight: '600',
+    subsets: ['latin'],
+  })
 
 const raleway = Raleway({
   weight: '400',
@@ -30,53 +35,53 @@ export default function Services() {
 
         <div className="flex flex-col justify-center items-center w-full imgd rounded-rb bg-[url('../public/image.jpg')] h-500px">
       <h1 className={`${rubik.className} text-white  text-3xl md:text-6xl brightness-100 tracking-wider`}>TOP TIERS SERVICES</h1>
-            <span className="text-white md:self-center md:text-xl mt-3">We pride ourselves on our attention to detail</span>
-            <span className="text-white md:self-center md:text-xl"> and our commitment to providing excellent customer service.</span>
+            <span className="text-white md:text-xl mt-3">We pride ourselves on our attention to detail</span>
+            <span className="text-white md:text-xl"> and our commitment to providing excellent customer service.</span>
         </div>
 
-    <div className="flex flex-wrap gap-10 shadow-mainsh justify-center md:justify-evenly py-12 px-6">
-     <Link href={'/services/house-service'}  className="card  bg-black rounded-md w-fit flex flex-col justify-center items-center   ">
+    <div className="flex flex-wrap gap-10 shadow-mainsh  md:justify-evenly py-12 px-6">
+     <Link href={'/services/house-service'}  className={`${comfortaa.className} card text-lg text-blue-800 hover:underline rounded-md  `}>
         <Image
         alt="houseServImg"
-        className="crdimg rounded-t-md  h-full"
+        className="crdimg rounded-md shadow-card h-full mb-3"
           src={'/services/houseServ.jpg'}
-          width={254}
-          height={350}
+          width={224}
+          height={150}
         />
-        <h2 className={`${dmsans.className} text-white py-1 text-2xl`}>House Services</h2>
+      House Services
       </Link>
 
-     <Link href={'/services/HouseService'}  className="card  bg-black rounded-md w-fit flex flex-col justify-center items-center   ">
+     <Link href={'/services/HouseService'}  className={`${comfortaa.className} card text-lg text-blue-800 hover:underline rounded-md  `}>
         <Image
         alt="landServImg"
-        className="crdimg rounded-t-md  h-full"
+        className="crdimg rounded-md shadow-card h-full mb-3"
           src={'/services/landscapping.jpg'}
-          width={254}
-          height={350}
+          width={224}
+          height={150}
         />
-        <h2 className={`${dmsans.className} py-1 text-white text-2xl`}>Landscaping</h2>
+        Landscaping
       </Link>
 
-      <Link href={'/services/house-service'} className="bg-black card rounded-md w-fit flex flex-col justify-center items-center   ">
+      <Link href={'/services/house-service '} className={`${comfortaa.className} card text-lg text-blue-800 hover:underline rounded-md  `}>
         <Image
         alt="comServImg"
-        className="crdimg rounded-t-md  h-full"
+        className="crdimg rounded-md shadow-card h-full mb-3"
           src={'/services/comServ.jpg'}
-          width={254}
-          height={350}
+          width={224}
+          height={150}
         />
-        <h2 className={`${dmsans.className} py-1 text-white text-2xl`}>Commercial Services</h2>
+    Commercial Services
       </Link>
 
-     <Link href={'/services/HouseService'}  className="card  bg-black rounded-md w-fit flex flex-col justify-center items-center   ">
+     <Link href={'/services/HouseService'}  className={`${comfortaa.className} card text-lg text-blue-800 hover:underline rounded-md  `}>
         <Image
         alt="plowServImg"
-        className="crdimg rounded-t-md  h-full"
+        className="crdimg rounded-md shadow-card h-full mb-3"
           src={'/services/plowImg.jpg'}
-          width={254}
-          height={350}
+          width={224}
+          height={150}
         />
-        <h2 className={`${dmsans.className} py-1 text-white text-2xl`}>Plowing Services</h2>
+        Plowing Services
       </Link>
 
     </div>
