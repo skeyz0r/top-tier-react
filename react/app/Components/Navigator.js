@@ -14,10 +14,6 @@ const poppins = Poppins({
   subsets: ['latin'],
 })
 
-const raleway = Raleway({
-  weight: '400',
-  subsets: ['latin'],
-})
 
 
 export default function Navigator() {

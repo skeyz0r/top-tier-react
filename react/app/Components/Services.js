@@ -1,6 +1,5 @@
 
 import Image from "next/image"
-import Link from "next/link"
 import { DM_Sans, Raleway } from "next/font/google"
 import { Rubik } from "next/font/google"
 
@@ -38,7 +37,7 @@ export default function Services() {
           width={300}
           height={500}
         />
-        <h2 className={`${dmsans.className} text-white text-2xl    `}>House Services</h2>
+        <h2 className={`${dmsans.className} text-white text-2xl`}>House Services</h2>
       </div>
 
       <div className="card  bg-black rounded-md w-fit flex flex-col justify-center items-center cursor-pointer  ">
@@ -49,7 +48,7 @@ export default function Services() {
           width={300}
           height={500}
         />
-        <h2 className={`${dmsans.className} text-white text-2xl    `}>Landscaping</h2>
+        <h2 className={`${dmsans.className} text-white text-2xl`}>Landscaping</h2>
       </div>
 
       <div className="bg-black card rounded-md w-fit flex flex-col justify-center items-center cursor-pointer  ">
@@ -60,7 +59,7 @@ export default function Services() {
           width={300}
           height={500}
         />
-        <h2 className={`${dmsans.className} text-white text-2xl   `}>Commercial Services</h2>
+        <h2 className={`${dmsans.className} text-white text-2xl`}>Commercial Services</h2>
       </div>
 
       <div className="card  bg-black rounded-md w-fit flex flex-col justify-center items-center cursor-pointer  ">
@@ -71,7 +70,7 @@ export default function Services() {
           width={300}
           height={500}
         />
-        <h2 className={`${dmsans.className} text-white text-2xl  `}>Plowing Services</h2>
+        <h2 className={`${dmsans.className} text-white text-2xl`}>Plowing Services</h2>
       </div>
 
     </div>
@@ -87,26 +86,26 @@ export default function Services() {
 
               <div className="py-3 max-w-[600px]">
               <h3 className={`${dmsans.className}`}>House Repair Expertise:</h3>
-<p className="">From minor fixes to major renovations, our skilled handymen are equipped to handle a wide spectrum of house repair services. 
+<p>From minor fixes to major renovations, our skilled handymen are equipped to handle a wide spectrum of house repair services. 
 Whether it's a leaky faucet, a squeaky door, or a more complex project, we bring expertise and precision to every job, leaving your home flawless and functional.</p>
             </div>
 
             <div className="py-3 max-w-[600px]">
               <h3 className={`${dmsans.className}`}>Landscaping:</h3>
-<p className="">Unveil the true potential of your outdoor haven.
+<p>Unveil the true potential of your outdoor haven.
  Our landscaping services encompass everything from intricate lawn rolling to imaginative designs that transform mere yards into breathtaking escapes.
  Experience the beauty of nature right at your doorstep.</p>
             </div>
 
             <div className="py-3 max-w-[600px]">
               <h3 className={`${dmsans.className}`}>Snow Plowing:</h3>
-<p className="">With a focus on both residential and commercial properties, we clear the way for safe and seamless transitions.
+<p>With a focus on both residential and commercial properties, we clear the way for safe and seamless transitions.
  Our snow plowing services ensure your property remains accessible and hazard-free, no matter the weather.</p>
             </div>
 
             <div className="py-3 max-w-[600px]">
               <h3 className={`${dmsans.className}`}>Additional services:</h3>
-<p className="">We also provide home, gutter, and commercial cleaning services that bring a new level of freshness and order to your spaces. 
+<p>We also provide home, gutter, and commercial cleaning services that bring a new level of freshness and order to your spaces. 
 Experience the joy of pristine environments that invigorate your senses and create a lasting impression.</p>
             </div>
 
