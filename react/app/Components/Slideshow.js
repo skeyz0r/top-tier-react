@@ -12,6 +12,8 @@ const sarala = Sarala({
 })
 
 
+/* Hooks */
+const [img, setImg] = useState(1);
 
 
 export default function Slideshow() {
