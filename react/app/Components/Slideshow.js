@@ -1,6 +1,7 @@
 'use client'
 
-import React, { useState } from "react"
+import { useState } from "react"
+import Image from "next/image"
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
 import "./styles.css"
@@ -18,20 +19,23 @@ export default function Slideshow() {
     },
   })
 
+ 
+
   return (
-    <>
-      <div className="navigation-wrapper">
-        <div ref={sliderRef} className="keen-slider">
-          <div className="keen-slider__slide number-slide1">1</div>
-          <div className="keen-slider__slide number-slide2">2</div>
-          <div className="keen-slider__slide number-slide3">3</div>
-          <div className="keen-slider__slide number-slide4">4</div>
-          <div className="keen-slider__slide number-slide5">5</div>
-          <div className="keen-slider__slide number-slide6">6</div>
+    <section className="py-5 self-center flex items-center flex-col md:w-[75%]">
+      <div className="navigation-wrapper max-w-[500px]">
+        <div id="keen" ref={sliderRef} className="keen-slider">
+          <Image id="1" src={'/slides/1.jpg'} width={500} height={500} className={` keen-slider__slide number-slide1`}/>
+          <Image id="2" src={'/slides/2.jpg'} width={500} height={500} className={` keen-slider__slide number-slide1`}/>
+          <Image id="3" src={'/slides/3.jpg'} width={500} height={500} className="keen-slider__slide number-slide1"/>
+          <Image id="4" src={'/slides/4.jpg'} width={500} height={500} className="keen-slider__slide number-slide1"/>
+          <Image id="5" src={'/slides/5.jpg'} width={500} height={500} className="keen-slider__slide number-slide1"/>
+          <Image id="6" src={'/slides/6.jpg'} width={500} height={500} className="keen-slider__slide number-slide1"/>
         </div>
         {loaded && instanceRef.current && (
           <>
             <Arrow
+            className="bg-black"
               left
               onClick={(e) =>
                 e.stopPropagation() || instanceRef.current?.prev()
@@ -40,6 +44,7 @@ export default function Slideshow() {
             />
 
             <Arrow
+            right
               onClick={(e) =>
                 e.stopPropagation() || instanceRef.current?.next()
               }
@@ -68,7 +73,7 @@ export default function Slideshow() {
           })}
         </div>
       )}
-    </>
+    </section>
   )
 }
 
