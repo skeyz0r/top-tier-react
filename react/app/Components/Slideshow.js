@@ -2,98 +2,193 @@
 
 import { useState } from "react"
 import Image from "next/image"
-import { useKeenSlider } from "keen-slider/react"
-import "keen-slider/keen-slider.min.css"
-import "./styles.css"
+import {BsFillArrowRightCircleFill, BsFillArrowLeftCircleFill} from 'react-icons/bs'
+
 
 export default function Slideshow() {
-  const [currentSlide, setCurrentSlide] = useState(0)
-  const [loaded, setLoaded] = useState(false)
-  const [sliderRef, instanceRef] = useKeenSlider({
-    initial: 0,
-    slideChanged(slider) {
-      setCurrentSlide(slider.track.details.rel)
-    },
-    created() {
-      setLoaded(true)
-    },
+ 
+const [image, setImage] = useState({
+      one: 'visible',
+      two: 'hidden',
+      three: 'hidden',
+      four: 'hidden',
+      five: 'hidden',
+      six: 'hidden'
   })
 
+  const [ref, setRef] = useState(1)
+
+  function left()
+  {
+      if(ref === 1)
+      {
+        setRef(6)
+        setImage({
+          one: 'hidden',
+          two: 'hidden',
+          three: 'hidden',
+          four: 'hidden',
+          five: 'hidden',
+          six: 'visible'
+        })
+      }
+      if(ref === 2)
+      {
+        setRef(1)
+        setImage({
+          one: 'visible',
+          two: 'hidden',
+          three: 'hidden',
+          four: 'hidden',
+          five: 'hidden',
+          six: 'hidden'
+        })
+      }
+      if(ref === 3)
+      {
+        setRef(2)
+        setImage({
+          one: 'hidden',
+          two: 'visible',
+          three: 'hidden',
+          four: 'hidden',
+          five: 'hidden',
+          six: 'hidden'
+        })
+      }
+
+      if(ref === 4)
+      {
+        setRef(3)
+        setImage({
+          one: 'hidden',
+          two: 'hidden',
+          three: 'visible',
+          four: 'hidden',
+          five: 'hidden',
+          six: 'hidden'
+        })
+      }
+
+      if(ref === 5)
+      {
+        setRef(4)
+        setImage({
+          one: 'hidden',
+          two: 'hidden',
+          three: 'hidden',
+          four: 'visible',
+          five: 'hidden',
+          six: 'hidden'
+        })
+      }
+      if(ref === 6)
+      {
+        setRef(5)
+        setImage({
+          one: 'hidden',
+          two: 'hidden',
+          three: 'hidden',
+          four: 'hidden',
+          five: 'visible',
+          six: 'hidden'
+        })
+      }
+  }
+
+  function right()
+  {
+      if(ref === 1)
+      {
+        setRef(2)
+        setImage({
+          one: 'hidden',
+          two: 'visible',
+          three: 'hidden',
+          four: 'hidden',
+          five: 'hidden',
+          six: 'hidden'
+        })
+      }
+      if(ref === 2)
+      {
+        setRef(3)
+        setImage({
+          one: 'hidden',
+          two: 'hidden',
+          three: 'visible',
+          four: 'hidden',
+          five: 'hidden',
+          six: 'hidden'
+        })
+      }
+      if(ref === 3)
+      {
+        setRef(4)
+        setImage({
+          one: 'hidden',
+          two: 'hidden',
+          three: 'hidden',
+          four: 'visible',
+          five: 'hidden',
+          six: 'hidden'
+        })
+      }
+
+      if(ref === 4)
+      {
+        setRef(5)
+        setImage({
+          one: 'hidden',
+          two: 'hidden',
+          three: 'hidden',
+          four: 'hidden',
+          five: 'visible',
+          six: 'hidden'
+        })
+      }
+
+      if(ref === 5)
+      {
+        setRef(6)
+        setImage({
+          one: 'hidden',
+          two: 'hidden',
+          three: 'hidden',
+          four: 'hidden',
+          five: 'hidden',
+          six: 'visible'
+        })
+      }
+      if(ref === 6)
+      {
+        setRef(1)
+        setImage({
+          one: 'visible',
+          two: 'hidden',
+          three: 'hidden',
+          four: 'hidden',
+          five: 'hidden',
+          six: 'hidden'
+        })
+      }
+  }
  
 
   return (
-    <section className="py-5 self-center flex items-center flex-col md:w-[75%]">
-      <div className="navigation-wrapper max-w-[500px]">
-        <div id="keen" ref={sliderRef} className="keen-slider">
-          <Image id="1" src={'/slides/1.jpg'} width={500} height={500} className={` keen-slider__slide number-slide1`}/>
-          <Image id="2" src={'/slides/2.jpg'} width={500} height={500} className={` keen-slider__slide number-slide1`}/>
-          <Image id="3" src={'/slides/3.jpg'} width={500} height={500} className="keen-slider__slide number-slide1"/>
-          <Image id="4" src={'/slides/4.jpg'} width={500} height={500} className="keen-slider__slide number-slide1"/>
-          <Image id="5" src={'/slides/5.jpg'} width={500} height={500} className="keen-slider__slide number-slide1"/>
-          <Image id="6" src={'/slides/6.jpg'} width={500} height={500} className="keen-slider__slide number-slide1"/>
+    <section className="py-5 px-3 self-center flex items-center flex-col md:w-[75%]">
+      <div className="flex gap-3 items-center max-w-[500px]">
+    <BsFillArrowLeftCircleFill className="cursor-pointer" size={30} onClick={() => {left()}}></BsFillArrowLeftCircleFill>
+        <div  className="relative w-[90%] flex overflow-hidden">
+          <Image className={`${image.one}`} src={'/slides/1.jpg'} width={500} height={500}/>
+          <Image className={`${image.two}`} src={'/slides/2.jpg'} width={500} height={500} />
+          <Image className={`${image.three}`} src={'/slides/3.jpg'} width={500} height={500} />
+          <Image className={`${image.four}`} src={'/slides/4.jpg'} width={500} height={500} />
+          <Image className={`${image.five}`} src={'/slides/5.jpg'} width={500} height={500} />
+          <Image className={`${image.six}`} src={'/slides/6.jpg'} width={500} height={500} />
         </div>
-        {loaded && instanceRef.current && (
-          <>
-            <Arrow
-            className="bg-black"
-              left
-              onClick={(e) =>
-                e.stopPropagation() || instanceRef.current?.prev()
-              }
-              disabled={currentSlide === 0}
-            />
+        <BsFillArrowRightCircleFill className="cursor-pointer" size={30} onClick={() => {right()}}></BsFillArrowRightCircleFill>
 
-            <Arrow
-            right
-              onClick={(e) =>
-                e.stopPropagation() || instanceRef.current?.next()
-              }
-              disabled={
-                currentSlide ===
-                instanceRef.current.track.details.slides.length - 1
-              }
-            />
-          </>
-        )}
-      </div>
-      {loaded && instanceRef.current && (
-        <div className="dots">
-          {[
-            ...Array(instanceRef.current.track.details.slides.length).keys(),
-          ].map((idx) => {
-            return (
-              <button
-                key={idx}
-                onClick={() => {
-                  instanceRef.current?.moveToIdx(idx)
-                }}
-                className={"dot" + (currentSlide === idx ? " active" : "")}
-              ></button>
-            )
-          })}
         </div>
+        </section>
       )}
-    </section>
-  )
-}
-
-function Arrow(props) {
-  const disabeld = props.disabled ? " arrow--disabled" : ""
-  return (
-    <svg
-      onClick={props.onClick}
-      className={`arrow ${
-        props.left ? "arrow--left" : "arrow--right"
-      } ${disabeld}`}
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-    >
-      {props.left && (
-        <path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" />
-      )}
-      {!props.left && (
-        <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" />
-      )}
-    </svg>
-  )
-}

@@ -31,7 +31,7 @@ export default function House()
 {
     return(
         <section className={`pt-20 px-5 flex flex-col`}>
-                <h1 className={`text-3xl ml-[6%] ${poppinsB.className} mt-10 `} >House Services</h1>
+                    <h3 className={`${poppinsL.className} text-xl`}>List of Top Tier Commercial & House Services:</h3>
                     <h2 className={` md:text-xl ml-[4%] ${poppinsL.className} mt-4 mb-7 `}>Top Tier House and Handyman Services - Elevating Homes through Excellence</h2>
 
         <div className="flex md:justify-between flex-wrap justify-center">

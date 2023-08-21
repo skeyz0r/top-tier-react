@@ -35,8 +35,8 @@ export default function Services() {
 
         <div className="flex flex-col justify-center items-center w-full imgd rounded-rb bg-[url('../public/image.jpg')] h-500px">
       <h1 className={`${rubik.className} text-white  text-3xl md:text-6xl brightness-100 tracking-wider`}>TOP TIERS SERVICES</h1>
-            <span className="text-white md:text-xl mt-3">We pride ourselves on our attention to detail</span>
-            <span className="text-white md:text-xl"> and our commitment to providing excellent customer service.</span>
+            <span className="text-center text-white md:text-xl mt-3">We pride ourselves on our attention to detail</span>
+            <span className="text-center text-white md:text-xl"> and our commitment to providing excellent customer service.</span>
         </div>
 
     <div className="flex flex-wrap gap-10 shadow-mainsh justify-evenly py-12 px-6">
@@ -48,7 +48,7 @@ export default function Services() {
           width={224}
           height={150}
         />
-      House Services
+      House & Commercial 
       </Link>
 
      <Link href={'/services/HouseService'}  className={`${comfortaa.className} card text-lg text-blue-800 hover:underline my-6 rounded-md  `}>
@@ -62,16 +62,6 @@ export default function Services() {
         Landscaping
       </Link>
 
-      <Link href={'/services/house-service '} className={`${comfortaa.className} card text-lg text-blue-800 hover:underline my-6 rounded-md  `}>
-        <Image
-        alt="comServImg"
-        className="crdimg rounded-md shadow-card h-full mb-3"
-          src={'/services/comServ.jpg'}
-          width={224}
-          height={150}
-        />
-    Commercial Services
-      </Link>
 
      <Link href={'/services/HouseService'}  className={`${comfortaa.className} card text-lg text-blue-800 hover:underline my-6 rounded-md  `}>
         <Image
