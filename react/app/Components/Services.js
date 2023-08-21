@@ -51,7 +51,7 @@ export default function Services() {
       House & Commercial 
       </Link>
 
-     <Link href={'/services/HouseService'}  className={`${comfortaa.className} card text-lg text-blue-800 hover:underline my-6 rounded-md  `}>
+     <Link href={'/services/landscaping'}  className={`${comfortaa.className} card text-lg text-blue-800 hover:underline my-6 rounded-md  `}>
         <Image
         alt="landServImg"
         className="crdimg rounded-md shadow-card h-full mb-3"
