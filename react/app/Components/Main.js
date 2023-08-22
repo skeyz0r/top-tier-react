@@ -15,7 +15,7 @@ export default function Main() {
       <Image
       alt="backMainImg"
         className="w-full"
-        src={'/imag.jpg'}
+        src={'/back.jpg'}
         width={1920}
         height={1080} />
       <div className="flex flex-col md:w-1/3 self-center absolute">

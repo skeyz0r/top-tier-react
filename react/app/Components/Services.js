@@ -46,7 +46,7 @@ export default function Services() {
         </div>
 
     <div className="flex flex-wrap gap-14 shadow-mainsh justify-evenly py-12 px-6">
-     <Link href={'/services/house-service'}  className={`${comfortaa.className} card transition-all text-xl h-[200px] text-white hover:underline  rounded-xl  `}>
+     <Link href={'/services/handyImg'}  className={`${comfortaa.className} card transition-all text-xl h-[200px] text-white hover:underline  rounded-xl  `}>
         <Image
         alt="houseServImg"
         className=" brightness-50 hover:brightness-100 rounded-xl shadow-card h-full mb-3 "
@@ -57,7 +57,7 @@ export default function Services() {
       <span className="relative srn transition-all left-3 bottom-20 my-6">House & Commercial</span>
       </Link>
 
-     <Link href={'/services/landscaping'}  className={`${comfortaa.className} card transition-all text-xl h-[200px] text-white hover:underline  rounded-xl  `}>
+     <Link href={'/services/lawnServ'}  className={`${comfortaa.className} card transition-all text-xl h-[200px] text-white hover:underline  rounded-xl  `}>
         <Image
         alt="landServImg"
         className=" brightness-50 hover:brightness-100 rounded-xl shadow-card h-full mb-3 "
@@ -92,7 +92,7 @@ export default function Services() {
               <h2 className={`${rubik.className} pl-4 mt-9 py-5 text-lg md:text-2xl`}><strong>Our services include:</strong></h2>
               
              
-              <div className="flex  mb-9 gap-7 flex-wrap xxl:w-[70%] self-center">
+              <div className="flex border-t border-b py-20  mb-9 gap-7 flex-wrap xxl:w-[70%] self-center">
              
               <div className="py-3 px-5 border rounded-2xl shadow-faint max-w-[610px]">
               <h3 className={`mb-1 ${dmsans.className}`}>House Repair:</h3>
