@@ -39,9 +39,9 @@ export default function Landscaping()
 
                     <h3 className={`${poppinsL.className} text-xl`}>List of Top Tier Landscaping Services:</h3>
         <ul className={`${comfortaa.className} w-fit flex gap-1 flex-col  mb-9 list-disc px-10`}>
-    <li>Roofing and Siding</li>
-    <li>Gutter Repair and Cleaning</li>
-    <li>Power Washing</li>
+    <li>Lawn Rolling</li>
+    <li>Pruning and trimming</li>
+    <li>Tree Cutting</li>
     <li>Wall Holes Patching</li>
    <li>Fixing Doors/Floors</li>
     <li>Repairing and Installing Tiles</li>

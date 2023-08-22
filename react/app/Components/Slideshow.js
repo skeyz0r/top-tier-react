@@ -176,18 +176,18 @@ const [image, setImage] = useState({
  
 
   return (
-    <section className="py-5 px-3 self-center flex items-center flex-col md:w-[75%]">
+    <section className="select-none my-6 py-5 px-3 self-center flex items-center flex-col border">
       <div className="flex gap-3 items-center max-w-[500px]">
-    <BsFillArrowLeftCircleFill className="cursor-pointer" size={30} onClick={() => {left()}}></BsFillArrowLeftCircleFill>
+    <BsFillArrowLeftCircleFill className=" select-none cursor-pointer" size={30} onClick={() => {left()}}></BsFillArrowLeftCircleFill>
         <div  className="relative w-[90%] flex overflow-hidden">
-          <Image className={`${image.one}`} src={'/slides/1.jpg'} width={500} height={500}/>
-          <Image className={`${image.two}`} src={'/slides/2.jpg'} width={500} height={500} />
-          <Image className={`${image.three}`} src={'/slides/3.jpg'} width={500} height={500} />
-          <Image className={`${image.four}`} src={'/slides/4.jpg'} width={500} height={500} />
-          <Image className={`${image.five}`} src={'/slides/5.jpg'} width={500} height={500} />
-          <Image className={`${image.six}`} src={'/slides/6.jpg'} width={500} height={500} />
+          <Image className={`h-[400px] object-contain ${image.one}`} src={'/slides/1.jpg'} width={500} height={500}/>
+          <Image className={`h-[400px] object-contain ${image.two}`} src={'/slides/2.jpg'} width={500} height={500} />
+          <Image className={`h-[400px] object-contain ${image.three}`} src={'/slides/3.jpg'} width={500} height={500} />
+          <Image className={`h-[400px] object-contain ${image.four}`} src={'/slides/4.jpg'} width={500} height={500} />
+          <Image className={`h-[400px] object-contain ${image.five}`} src={'/slides/5.jpg'} width={500} height={500} />
+          <Image className={`h-[400px] object-contain ${image.six}`} src={'/slides/6.jpg'} width={500} height={500} />
         </div>
-        <BsFillArrowRightCircleFill className="cursor-pointer" size={30} onClick={() => {right()}}></BsFillArrowRightCircleFill>
+        <BsFillArrowRightCircleFill className="select-none cursor-pointer" size={30} onClick={() => {right()}}></BsFillArrowRightCircleFill>
 
         </div>
         </section>

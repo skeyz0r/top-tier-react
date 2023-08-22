@@ -16,7 +16,8 @@ module.exports = {
       boxShadow:{
         'mainsh': '5px 5px 10px rgba(0, 0, 0, 0.123)',
         'line': '3px 3px 15px black',
-        'card': '1px 3px 8px black',
+        'card': '1px 2px 3px #333',
+        'faint': '1px 2px 5px .2px #3333',
       },
       brightness:{
         '30': '0'
