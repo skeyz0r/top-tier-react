@@ -46,11 +46,11 @@ export default function Services() {
         </div>
 
     <div className="flex flex-wrap gap-14 shadow-mainsh justify-evenly py-12 px-6">
-     <Link href={'/services/handyImg'}  className={`${comfortaa.className} card transition-all text-xl h-[200px] text-white hover:underline  rounded-xl  `}>
+     <Link href={'/services/house-service'}  className={`${comfortaa.className} card transition-all text-xl h-[200px] text-white hover:underline  rounded-xl  `}>
         <Image
         alt="houseServImg"
         className=" brightness-50 hover:brightness-100 rounded-xl shadow-card h-full mb-3 "
-          src={'/services/houseServ.jpg'}
+          src={'/services/handyImg.jpg'}
           width={300}
           height={10}
         />
@@ -61,7 +61,7 @@ export default function Services() {
         <Image
         alt="landServImg"
         className=" brightness-50 hover:brightness-100 rounded-xl shadow-card h-full mb-3 "
-          src={'/services/landscapping.jpg'}
+          src={'/services/lawnServ.jpg'}
           width={300}
           height={10}
         />
