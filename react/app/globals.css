@@ -10,6 +10,12 @@
     background-position: center;
 }
 
+.gal{
+  
+background: rgb(72,72,100);
+background: radial-gradient(circle, rgba(72,72,100,1) 0%, rgba(38,38,47,1) 50%, rgba(72,72,100,1) 100%);
+}
+
 .card:hover .srn
 {
   color: #333;

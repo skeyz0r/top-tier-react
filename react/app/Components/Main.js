@@ -1,10 +1,10 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import {  Rampart_One } from "next/font/google"
+import {  Comfortaa } from "next/font/google"
 
 
-const inder = Rampart_One({
+const inder = Comfortaa({
   weight: '400',
   subsets: ['latin'],
 })
