@@ -16,7 +16,7 @@ export default function Main() {
       <div className="flex flex-col w-full justify-center object-contain">
       <Image
       alt="backMainImg"
-        className="w-full brightness-75"
+        className="w-full min-h-[150px] brightness-75"
         src={'/back.jpg'}
         width={1920}
         height={1080} />
