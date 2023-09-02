@@ -82,6 +82,13 @@ background: radial-gradient(circle, rgba(72,72,100,1) 0%, rgba(38,38,47,1) 50%, 
   }
 }
 
+@media (max-width: 816px)
+{
+  #num{
+    display: none;
+  }
+}
+
 @media (max-width: 1116px)
 
 {
