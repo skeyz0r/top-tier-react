@@ -6,7 +6,7 @@ export default function Footer()
    
 
     return(
-        <footer className={`w-full  flex-col border-t justify-center items-center flex border-black border-solid bg-navYellow`}>
+        <footer className={`w-full py-2  flex-col border-t justify-center items-center flex border-black border-solid bg-navYellow`}>
             <div className="flex py-1 gap-2">
                     <Link className="hover:underline" href={'/policy/privacy'}>Privacy Policy</Link>
                     <p>|</p>

@@ -1,6 +1,4 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Poppins, Comfortaa, Sarala } from "next/font/google"
+import { Poppins, Comfortaa, Sarala, Caveat } from "next/font/google"
 
 
 
@@ -21,18 +19,25 @@ const comfortaa = Comfortaa({
 })
 
 const sarala = Sarala({
-    weight: '700',
+    weight: '400',
     subsets: ['latin'],
   })
 
 
+  const caveat = Caveat({
+    weight: '600',
+    subsets: ['latin'],
+  })
+
 
 export default function House()
 {
+
+   
     return(
-        <section className={`pt-20 px-5 flex flex-col`}>
-                    <h3 className={`${poppinsL.className} text-xl`}>List of Top Tier Commercial & House Services:</h3>
-                    <h2 className={` md:text-xl ml-[4%] ${poppinsL.className} mt-4 mb-7 `}>Top Tier House and Handyman Services - Elevating Homes through Excellence</h2>
+        <section className={`mb-[8.21%] pt-20 px-5 flex flex-col`}>
+                    <h3 className={`${poppinsL.className} mt-20 text-2xl`}>Top Tier Commercial & House Services:</h3>
+    
 
         <div className="flex md:justify-between flex-wrap justify-center">
         <div className="flex flex-col gap-5 my-9 ml-[2%]">
@@ -56,8 +61,9 @@ export default function House()
 <h1 className={`${poppinsB.className} shadow-line border-t-4 py-3 px-2 border-solid border-navYellow text-3xl`}>GET FREE QUOTE!</h1>
 <h2 className={`${poppinsB.className} text-center border-y-4 py-3 px-2 border-solid border-navYellow text-xl`}>1 (920)-636-08-31</h2>
 </div>
-
-</div>            
+</div> 
+   <h2 className={`md:text-2xl text-xl ml-[4%] ${sarala.className} mt-4 mb-7 `}>Top Tier House and Handyman Services 
+                     <span className={`tracking-wider ${ caveat.className}`}> — Elevating Homes through Excellence</span></h2>           
         </section>
     )
 }

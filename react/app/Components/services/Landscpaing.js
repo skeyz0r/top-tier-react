@@ -30,8 +30,8 @@ const sarala = Sarala({
 export default function Landscaping()
 {
     return(
-        <section className={`pt-20 px-5 flex flex-col`}>
-                    <h3 className={`${poppinsL.className} text-xl`}>List of Top Tier Landscaping Services:</h3>
+        <section className={`h-[100dvh] pt-20 px-5 flex flex-col`}>
+                    <h3 className={`${poppinsL.className} mt-20 text-xl`}>List of Top Tier Landscaping Services:</h3>
                     <h2 className={` md:text-xl ml-[4%] ${poppinsL.className} mt-4 mb-7 `}>Top Tier House and Handyman Services - Elevating Homes through Excellence</h2>
 
         <div className="flex md:justify-between flex-wrap justify-center">
@@ -40,14 +40,12 @@ export default function Landscaping()
                     <h3 className={`${poppinsL.className} text-xl`}>List of Top Tier Landscaping Services:</h3>
         <ul className={`${comfortaa.className} w-fit flex gap-1 flex-col  mb-9 list-disc px-10`}>
     <li>Lawn Rolling</li>
-    <li>Pruning and trimming</li>
+    <li>Pruning and Trimming</li>
     <li>Tree Cutting</li>
-    <li>Wall Holes Patching</li>
-   <li>Fixing Doors/Floors</li>
-    <li>Repairing and Installing Tiles</li>
-    <li>Drywall Installation/repair</li>
-                        <li>Plaster Patching</li>
-                        <li>Touch ups</li>
+    <li>Sod and Mulch Installment</li>
+   <li>Lawn Seeding</li>
+    <li>Rock Installation</li>
+   
                         <li>And any more additional services!</li>
 </ul>        
 </div>

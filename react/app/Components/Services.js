@@ -39,17 +39,17 @@ export default function Services() {
 
 
 
-        <div className="flex flex-col justify-center items-center w-full imgd rounded-rb bg-[url('../public/image.jpg')] h-500px">
+        <div id="srvCont" className="flex flex-col justify-center items-center w-full imgd rounded-rb bg-[url('../public/image.jpg')] h-500px">
       <h1 className={`${rubik.className} text-white  text-3xl md:text-6xl brightness-100 tracking-wider`}>TOP TIERS SERVICES</h1>
             <span className="text-center text-white md:text-xl mt-3">We pride ourselves on our attention to detail</span>
             <span className="text-center text-white md:text-xl"> and our commitment to providing excellent customer service.</span>
         </div>
 
     <div className="flex flex-wrap gap-14 shadow-mainsh justify-evenly py-12 px-6">
-     <Link href={'/services/house-service'}  className={`${comfortaa.className} card transition-all text-xl h-[200px] text-white hover:underline  rounded-xl  `}>
+     <Link href={'/services/house-service'}  className={`${comfortaa.className} card transition-all text-xl h-[200px] text-white   rounded-xl  `}>
         <Image
         alt="houseServImg"
-        className=" brightness-50 hover:brightness-100 rounded-xl shadow-card h-full mb-3 "
+        className=" brightness-[.6] hover:brightness-100 rounded-xl shadow-card h-full mb-3 "
           src={'/services/handyImg.jpg'}
           width={300}
           height={10}
@@ -57,10 +57,10 @@ export default function Services() {
       <span className="relative srn transition-all left-3 bottom-20 my-6">House & Commercial</span>
       </Link>
 
-     <Link href={'/services/lawnServ'}  className={`${comfortaa.className} card transition-all text-xl h-[200px] text-white hover:underline  rounded-xl  `}>
+     <Link href={'/services/landscaping'}  className={`${comfortaa.className} card transition-all text-xl h-[200px] text-white   rounded-xl  `}>
         <Image
         alt="landServImg"
-        className=" brightness-50 hover:brightness-100 rounded-xl shadow-card h-full mb-3 "
+        className=" brightness-[.6] hover:brightness-100 rounded-xl shadow-card h-full mb-3 "
           src={'/services/lawnServ.jpg'}
           width={300}
           height={10}
@@ -69,10 +69,10 @@ export default function Services() {
       </Link>
 
 
-     <Link href={'/services/HouseService'}  className={`${comfortaa.className} card transition-all text-xl h-[200px] text-white hover:underline  rounded-xl  `}>
+     <Link href={'/services/HouseService'}  className={`${comfortaa.className} card transition-all text-xl h-[200px] text-white   rounded-xl  `}>
         <Image
         alt="plowServImg"
-        className=" brightness-50 hover:brightness-100 rounded-xl shadow-card h-full mb-3 "
+        className=" brightness-[.6] hover:brightness-100 rounded-xl shadow-card h-full mb-3 "
           src={'/services/plowImg.jpg'}
           width={300}
           height={10}
@@ -92,31 +92,30 @@ export default function Services() {
               <h2 className={`${rubik.className} pl-4 mt-9 py-5 text-lg md:text-2xl`}><strong>Our services include:</strong></h2>
               
              
-              <div className="flex border-t border-b py-20  mb-9 gap-7 flex-wrap xxl:w-[70%] self-center">
+              <div className="flex border-t border-b py-10  mb-9 gap-7 flex-wrap xxl:w-[70%] self-center">
              
               <div className="py-3 px-5 border rounded-2xl shadow-faint max-w-[610px]">
               <h3 className={`mb-1 ${dmsans.className}`}>House Repair:</h3>
               <p className={`${rob.className}text-gray-600`}>From minor fixes to major renovations, our skilled handymen are equipped to handle a wide spectrum of house repair services. 
-Whether it's a leaky faucet, a squeaky door, or a more complex project, we bring expertise and precision to every job, leaving your home flawless and functional.</p>
-            </div>
+</p>            </div>
 
             <div className="py-3 px-5 border rounded-2xl shadow-faint max-w-[610px]">
               <h3 className={`mb-1 ${dmsans.className}`}>Landscaping:</h3>
               <p className={`${rob.className}text-gray-600`}>Unveil the true potential of your outdoor haven.
  Our landscaping services encompass everything from intricate lawn rolling to imaginative designs that transform mere yards into breathtaking escapes.
- Experience the beauty of nature right at your doorstep.</p>
+</p>
             </div>
 
             <div className="py-3 px-5 border rounded-2xl shadow-faint max-w-[610px]">
               <h3 className={`mb-1 ${dmsans.className}`}>Snow Plowing:</h3>
               <p className={`${rob.className}text-gray-600`}>With a focus on both residential and commercial properties, we clear the way for safe and seamless transitions.
- Our snow plowing services ensure your property remains accessible and hazard-free, no matter the weather.</p>
+</p>
             </div>
 
             <div className="py-3 px-5 border rounded-2xl shadow-faint max-w-[610px]">
               <h3 className={`mb-1 ${dmsans.className}`}>Additional services:</h3>
               <p className={`${rob.className}text-gray-600`}>We also provide home, gutter, and commercial cleaning services that bring a new level of freshness and order to your spaces. 
-Experience the joy of pristine environments that invigorate your senses and create a lasting impression.</p>
+</p>
             </div>
 
             </div>

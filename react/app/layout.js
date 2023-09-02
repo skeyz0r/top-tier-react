@@ -1,6 +1,8 @@
+'use client'
 import './globals.css'
 import Navigator from './Components/Navigator'
 import Footer from './Components/Footer'
+
 
 export const metadata = {
   title: 'Top Tier Services LLC | Landscaping | Plowing | Construction Services in Wiscosin.',
@@ -8,6 +10,7 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+
   return (
     <html lang="en">
       <body>
