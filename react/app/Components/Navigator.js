@@ -1,3 +1,4 @@
+'use client'
 import Link from "next/link"
 import { Open_Sans, Poppins, Comfortaa } from 'next/font/google'
 import {GrFacebook} from "react-icons/gr"
@@ -35,10 +36,8 @@ const [vis, setVis] = useState('hidden');
   });
 
   return (
-    <nav className="flex fixed w-full z-30 md:justify-between justify-evenly  md:gap-20p border-solid border-b bg-navYellow border-gray-600">
-        <div className="flex md:ml-[5%] items-center justify-center gap-11">
-            <Link className={`${poppins.className} text-green-600 md:text-2xl`} href={'/'}>Top Tier Services LLC</Link>
-                    </div>
+    <nav className="flex max-h-[56.8px] fixed w-full z-30 justify-between items-center border-solid border-b bg-navYellow border-gray-600">
+            <Link className={`${poppins.className} md:pl-7 text-green-600 md:text-2xl`} href={'/'}>Top Tier Services LLC</Link>
                     <div className="flex items-center gap-3 md:mr-20 md:gap-9">
                     <p onClick={() => {  srv.scrollIntoView({ behavior: "smooth", block: "start" })}} className={`${comf.className} ${vis} cursor-pointer text-green-600 md:text-xl py-3`}>Services</p>
                     <Link className={`${comf.className}  text-green-600 md:text-xl py-3`} href={'/contact'}>Contact</Link>
