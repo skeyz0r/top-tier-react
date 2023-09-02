@@ -40,7 +40,7 @@ const [vis, setVis] = useState('hidden');
             <Link className={`${poppins.className} text-green-600 md:text-2xl`} href={'/'}>Top Tier Services LLC</Link>
                     </div>
                     <div className="flex items-center gap-3 md:mr-20 md:gap-9">
-                    <p onClick={() => {  srv.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" })}} className={`${comf.className} ${vis} cursor-pointer text-green-600 md:text-xl py-3`}>Services</p>
+                    <p onClick={() => {  srv.scrollIntoView({ behavior: "smooth", block: "start" })}} className={`${comf.className} ${vis} cursor-pointer text-green-600 md:text-xl py-3`}>Services</p>
                     <Link className={`${comf.className}  text-green-600 md:text-xl py-3`} href={'/contact'}>Contact</Link>
         <h3 className={`${opens.className} text-green-600 md:text-2xl py-3`}>1 (920) 636-0831</h3>
         <Link target="_blank" href={'https://www.facebook.com/groups/801973678237251'}><GrFacebook size={30} color={'blue'}/></Link>
