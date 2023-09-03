@@ -43,7 +43,7 @@ const [vis, setVis] = useState('hidden');
                     <p onClick={() => {  srv.scrollIntoView({ behavior: "smooth", block: "start" })}} className={`${comf.className} ${vis} cursor-pointer text-green-600 md:text-xl py-3`}>Services</p>
                     <Link className={`${comf.className}  text-green-600 md:text-xl py-3`} href={'/'}>Contact</Link>
         <h3 id='num' className={`${opens.className} text-green-600 md:text-2xl py-3`}>1 (920) 636-0831</h3>
-        <Link className="md:ml-0 ml-2" target="_blank" href={'https://www.facebook.com/groups/801973678237251'}><GrFacebook size={30} color={'blue'}/></Link>
+        <Link className="md:ml-0 ml-2 hidden sm:block" target="_blank" href={'https://www.facebook.com/groups/801973678237251'}><GrFacebook size={30} color={'blue'}/></Link>
         </div>
 
     </nav>
