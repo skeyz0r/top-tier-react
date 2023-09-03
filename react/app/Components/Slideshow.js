@@ -176,9 +176,9 @@ const [image, setImage] = useState({
  
 
   return (
-    <section className="gal select-none py-5 px-3 w-full flex justify-center">
-      <div className="flex gap-3 px-5 py-2 border rounded-xl items-center max-w-[550px]">
-    <BsFillArrowLeftCircleFill color="white" className=" select-none cursor-pointer" size={30} onClick={() => {left()}}></BsFillArrowLeftCircleFill>
+    <section className="gal select-none py-5 px-3 w-full flex justify-center pb-20">
+      <div className="flex gap-3 px-5 py-2 border-gray-800 border-solid border rounded-xl items-center max-w-[550px]">
+    <BsFillArrowLeftCircleFill color="green" className=" select-none cursor-pointer" size={30} onClick={() => {left()}}></BsFillArrowLeftCircleFill>
         <div  className="relative w-[90%] flex overflow-hidden">
           <Image className={`h-[400px] object-contain ${image.one}`} src={'/slides/1.jpg'} width={500} height={500}/>
           <Image className={`h-[400px] object-contain ${image.two}`} src={'/slides/2.jpg'} width={500} height={500} />
@@ -187,7 +187,7 @@ const [image, setImage] = useState({
           <Image className={`h-[400px] object-contain ${image.five}`} src={'/slides/5.jpg'} width={500} height={500} />
           <Image className={`h-[400px] object-contain ${image.six}`} src={'/slides/6.jpg'} width={500} height={500} />
         </div>
-        <BsFillArrowRightCircleFill color="white" className="select-none cursor-pointer" size={30} onClick={() => {right()}}></BsFillArrowRightCircleFill>
+        <BsFillArrowRightCircleFill color="green" className="select-none cursor-pointer" size={30} onClick={() => {right()}}></BsFillArrowRightCircleFill>
 
         </div>
         </section>
