@@ -117,6 +117,16 @@
     position: relative;
   }
   
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+         -webkit-appearance: none;
+          margin: 0;
+  }
+
+  input[type=number] {
+      -moz-appearance: textfield;
+  }
+
   .title {
     font-size: 28px;
     color: royalblue;
@@ -136,13 +146,13 @@
     width: 16px;
     border-radius: 50%;
     left: 0px;
-    background-color: royalblue;
+    background-color: greenyellow;
   }
   
   .title::before {
     width: 18px;
     height: 18px;
-    background-color: royalblue;
+    background-color: green;
   }
   
   .title::after {
@@ -168,7 +178,7 @@
   }
   
   .signin a:hover {
-    text-decoration: underline royalblue;
+    text-decoration: underline green;
   }
   
   .flexi {
@@ -223,13 +233,16 @@
     width: 80%;
     border: none;
     outline: none;
-    background-color: royalblue;
+    background-color: green;
     padding: 10px;
+    border: 1px solid green;
     border-radius: 10px;
     color: #fff;
     font-size: 16px;
+    transition: all;
   }
-  
-  .submit:hover {
-    background-color: rgb(56, 90, 194);
+
+  .submit:hover{
+    background-color: transparent;
+    color: green;
   }
