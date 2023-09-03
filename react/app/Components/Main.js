@@ -12,21 +12,20 @@ const inder = Comfortaa({
 
 export default function Main() {
   return (
-    <main className="flex pt-[50px] flex-col w-full justify-center">
-      <div className="relative">
+    <div className="flex pt-[50px]  w-full">
       <Image
       alt="backMainImg"
         className="w-full min-h-[150px]"
         src={'/header.jpg'}
         width={1920}
         height={1080} />
-      <div className="flex flex-col md:gap-3 gap-1 w-[70%] top-[-150px]  relative">
+   <div id="btnCont" className="flex justify-end absolute w-[40%] self-end mb-6">
       <button className="btn">
     Call us Now
 </button>      
 </div>
-    </div>
+
     
-</main>
+</div>
   )
 }
