@@ -103,7 +103,6 @@
     height: 95vh;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .form {
@@ -116,7 +115,7 @@
     border-radius: 20px;
     position: relative;
   }
-  
+
   input::-webkit-outer-spin-button,
   input::-webkit-inner-spin-button {
          -webkit-appearance: none;
@@ -128,26 +127,16 @@
   }
 
   .title {
-    font-size: 28px;
+    font-size: 1.6em;
     color: royalblue;
     font-weight: 600;
     letter-spacing: -1px;
     position: relative;
     display: flex;
     align-items: center;
-    padding-left: 30px;
     margin-bottom: 0;
   }
   
-  .title::before,.title::after {
-    position: absolute;
-    content: "";
-    height: 16px;
-    width: 16px;
-    border-radius: 50%;
-    left: 0px;
-    background-color: greenyellow;
-  }
   
   .title::before {
     width: 18px;

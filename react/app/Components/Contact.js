@@ -1,5 +1,15 @@
 'use client'
 import { useState } from "react"
+import Slideshow from "./Slideshow"
+import {GrFacebook} from "react-icons/gr"
+import Link from "next/link"
+import { Open_Sans } from "next/font/google"
+
+
+const opens = Open_Sans({
+  weight: '300',
+  subsets: ['latin'],
+})
 
 export default function Contact()
 {
@@ -7,10 +17,14 @@ export default function Contact()
 const [cont, setCont] = useState({fname: '', lname: '', email: '', num: '', mes: ''})
 
     return(
-        <main className="md:py-[100px]">
+        <div className="flex flex-wrap justify-evenly">
          <div id="formCont">
     <form className="form" method="POST">
+    <h3 id='num' className={`${opens.className} text-green-600 md:text-2xl py-3`}>CALL - 1 (920) 636-0831 OR</h3>
+   <div className="flex gap-2 items-center">
+   <Link className="md:ml-0 ml-2 hidden sm:block" target="_blank" href={'https://www.facebook.com/groups/801973678237251'}><GrFacebook size={30} color={'blue'}/></Link>
     <p className="title">Contact Us </p>
+</div>
     <p className="message">Please don't hesitate to contact us for any questions or services!</p>
         <div className="flexi">
         <label>
@@ -42,7 +56,7 @@ const [cont, setCont] = useState({fname: '', lname: '', email: '', num: '', mes:
 </form>
 </div>
 
-
-        </main>
+<Slideshow/>
+        </div>
     )
 }

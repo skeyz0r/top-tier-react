@@ -4,7 +4,6 @@ import { useState } from "react"
 import Image from "next/image"
 import {BsFillArrowRightCircleFill, BsFillArrowLeftCircleFill} from 'react-icons/bs'
 
-
 export default function Slideshow() {
  
 const [image, setImage] = useState({
@@ -176,8 +175,8 @@ const [image, setImage] = useState({
  
 
   return (
-    <section className="gal select-none py-5 px-3 w-full flex justify-center pb-20">
-      <div className="flex gap-3 px-5 py-2 border-gray-800 border-solid border rounded-xl items-center max-w-[550px]">
+    <section  className="gal select-none py-5 px-3 flex justify-center items-center pb-20">
+      <div className="flex gap-3 px-5 py-2 rounded-xl items-center max-w-[550px]">
     <BsFillArrowLeftCircleFill color="green" className=" select-none cursor-pointer" size={30} onClick={() => {left()}}></BsFillArrowLeftCircleFill>
         <div  className="relative w-[90%] flex overflow-hidden">
           <Image className={`h-[400px] object-contain ${image.one}`} src={'/slides/1.jpg'} width={500} height={500}/>
