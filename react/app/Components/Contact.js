@@ -20,9 +20,9 @@ const [cont, setCont] = useState({fname: '', lname: '', email: '', num: '', mes:
         <div className="flex flex-wrap justify-evenly">
          <div id="formCont">
     <form className="form" method="POST">
-    <h3 id='num' className={`${opens.className} text-green-600 md:text-2xl py-3`}>CALL - 1 (920) 636-0831 OR</h3>
+    <h3 className={`${opens.className} text-green-600 md:text-2xl py-3`}>CALL - 1 (920) 636-0831 OR</h3>
    <div className="flex gap-2 items-center">
-   <Link className="md:ml-0 ml-2 hidden sm:block" target="_blank" href={'https://www.facebook.com/groups/801973678237251'}><GrFacebook size={30} color={'blue'}/></Link>
+   <Link target="_blank" href={'https://www.facebook.com/groups/801973678237251'}><GrFacebook size={30} color={'blue'}/></Link>
     <p className="title">Contact Us </p>
 </div>
     <p className="message">Please don't hesitate to contact us for any questions or services!</p>
