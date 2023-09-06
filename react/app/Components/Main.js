@@ -19,8 +19,8 @@ export default function Main() {
         src={'/head.png'}
         width={1920}
         height={1080} />
-   <div id="btnCont" className="flex flex-col gap-2 md:gap-10 ml-[30px] md:ml-[12%] absolute items-center w-fit self-center">
-    <h2 className={`w-fit text-xl md:text-2xl lg:text-3xl md:mb-20`}>The help you were looking for!</h2>
+   <div id="btnCont" className="flex flex-col gap-2 md:gap-10 ml-[30px] md:ml-[12%] absolute items-center w-[40%] sm:w-fit self-center">
+    <h2 className={`w-fit text-xl md:text-2xl lg:text-3xl md:mb-20 text-center`}>The help you were looking for!</h2>
    <button className="btn w-fit">
     <p className={`md:text-xl lg:text-2xl`}>GET FREE QUOTE</p>
     <svg stroke-width="4" stroke="currentColor" viewBox="0 0 24 24" fill="none" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg">
