@@ -33,67 +33,77 @@
  }
 }
 
-
 .btn {
-  font-size: 2rem;
-  padding: 0.5em 2em;
-  background-color: #000;
-  border: 3px solid yellow;
-  border-radius: 1em;
-  color: #fff;
-  top: 45%;
-  font-weight: bolder;
-  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
 }
 
+.btn {
+  --primary-color: #111;
+  --hovered-color: #c84747;
+  position: relative;
+  display: flex;
+  font-weight: 600;
+  gap: 0.5rem;
+  align-items: center;
+}
 
+.btn p {
+  margin: 0;
+  position: relative;
+  color: var(--primary-color)
+}
+
+.btn::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0;
+  bottom: -7px;
+  background: var(--hovered-color);
+  height: 2px;
+  transition: 0.3s ease-out;
+}
+
+.btn p::before {
+  position: absolute;
+/*   box-sizing: border-box; */
+  content: "GET FREE QUOTE";
+  width: 0%;
+  inset: 0;
+  color: var(--hovered-color);
+  overflow: hidden;
+  transition: 0.3s ease-out;
+}
+
+.btn:hover::after {
+  width: 100%;
+}
+
+.btn:hover p::before {
+  width: 100%;
+}
+
+.btn:hover svg {
+  transform: translateX(4px);
+  color: var(--hovered-color)
+}
+
+.btn svg {
+  color: var(--primary-color);
+  transition: 0.2s;
+  position: relative;
+  width: 15px;
+  transition-delay: 0.2s;
+}
 
 @media (max-width: 816px)
 {
   #num{
     display: none;
   }
-}
-
-
-@media (max-width: 1307px)
-{
-  #btnCont{
-      width: 35%;
-  }
-
-  .btn {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 850px)
-{
-  #btnCont{
-    width: 35%;
-}
-
-.btn {
-  font-size: 0.7rem;
-}
-}
-
-@media (max-width: 650px)
-{
-  #btnCont{
-    width: 40%;
-    margin-bottom: 10px;
-}
-
-
-}
-
-
-@media (max-width: 600px)
-{
-  #btnCont{
-    width: 43%;
-}
 }
 
 
