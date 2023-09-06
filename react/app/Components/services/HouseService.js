@@ -29,6 +29,7 @@ const sarala = Sarala({
     subsets: ['latin'],
   })
 
+  
 
 export default function House()
 {
@@ -36,7 +37,7 @@ export default function House()
    
     return(
         <section className={`mb-[8.21%] pt-20 px-5 flex flex-col`}>
-                    <h3 className={`${poppinsL.className} mt-20 text-2xl`}>Top Tier Commercial & House Services:</h3>
+                    <h3 className={`${sarala.className} mt-20 text-2xl`}>Top Tier Commercial & House Services</h3>
     
 
         <div className="flex md:justify-between flex-wrap justify-center">

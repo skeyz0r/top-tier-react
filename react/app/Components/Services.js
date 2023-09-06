@@ -69,7 +69,7 @@ export default function Services() {
       </Link>
 
 
-     <Link href={'/services/HouseService'}  className={`${comfortaa.className} card transition-all text-xl h-[200px] text-white   rounded-xl  `}>
+     <Link href={'/services/plowing'}  className={`${comfortaa.className} card transition-all text-xl h-[200px] text-white   rounded-xl  `}>
         <Image
         alt="plowServImg"
         className=" brightness-[.6] hover:brightness-100 rounded-xl shadow-card h-full mb-3 "

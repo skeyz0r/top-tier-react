@@ -27,24 +27,18 @@ const sarala = Sarala({
 
 
 
-export default function Landscaping()
+export default function Plowing()
 {
     return(
-        <section className={`mb-[2.23%] pt-20 px-5 flex flex-col`}>
-                    <h3 className={`${sarala.className} mt-20 text-xl`}>Top Tier Landscaping Services</h3>
+        <section className={`mb-[15.5%] pt-20 px-5 flex flex-col`}>
+                    <h3 className={`${sarala.className} mt-20 text-2xl`}>Top Tier Plowing Services</h3>
         <div className="flex md:justify-between flex-wrap justify-center">
         <div className="flex flex-col gap-5 my-9 ml-[2%]">
 
-                    <h3 className={`${poppinsL.className} text-xl`}>List of Top Tier Landscaping Services:</h3>
+                    <h3 className={`${poppinsL.className} text-xl`}>List of Top Tier Plowing Services:</h3>
         <ul className={`${comfortaa.className} w-fit flex gap-1 flex-col  mb-9 list-disc px-10`}>
-    <li>Lawn Rolling</li>
-    <li>Pruning and Trimming</li>
-    <li>Tree Cutting</li>
-    <li>Sod and Mulch Installment</li>
-   <li>Lawn Seeding</li>
-    <li>Rock Installation</li>
-   
-                        <li>And any more additional services!</li>
+    <li><span className="text-lg">Residential</span> - as low as $50!</li>
+    <li><span className="text-lg">Commercial</span> - contact for a free qoute now!</li>
 </ul>        
 </div>
 
@@ -53,9 +47,7 @@ export default function Landscaping()
 <h2 className={`${poppinsB.className} text-center border-y-4 py-3 px-2 border-solid border-navYellow text-xl`}>1 (920)-636-08-31</h2>
 </div>
 
-</div>       
-                    <h2 className={` md:text-xl ml-[4%] ${poppinsL.className} mt-4 mb-7 `}>Top Tier Landscaping Services - Transforming your outdoors.</h2>
-
+</div>            
         </section>
     )
 }

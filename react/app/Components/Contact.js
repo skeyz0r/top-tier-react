@@ -17,7 +17,7 @@ export default function Contact()
 const [cont, setCont] = useState({fname: '', lname: '', email: '', num: '', mes: ''})
 
     return(
-        <div className="flex flex-wrap justify-evenly">
+        <div id="contF" className="py-10 flex flex-wrap justify-evenly">
          <div id="formCont">
     <form className="form" method="POST">
     <h3 className={`${opens.className} text-green-600 md:text-2xl py-3`}>CALL - 1 (920) 636-0831 OR</h3>
@@ -55,8 +55,6 @@ const [cont, setCont] = useState({fname: '', lname: '', email: '', num: '', mes:
     <button onClick={console.log(cont.fname)} className="submit">Send</button>
 </form>
 </div>
-
-<Slideshow/>
         </div>
     )
 }

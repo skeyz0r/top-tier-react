@@ -36,7 +36,7 @@ const router = useRouter()
     if (typeof window !== 'undefined')
     {
   setSrv(document.getElementById('srvCont'));
-  setCont(document.getElementById('formCont'));
+  setCont(document.getElementById('contF'));
   setVis('')
   }
   });
