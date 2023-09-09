@@ -11,8 +11,8 @@ export async function POST(request)
     try{
     
         const data = await resend.emails.send({
-            from: 'Trevor <donotrespond@toptierservices.com>',
-            to: ['sdanvudi@gmail.com'],
+            from: 'Trevor <donotrespond@top-tier-services.com>',
+            to: ['uvandistar@gmail.com'],
             subject: 'New Message from the Website',
             react: Template(fname, lname, num, email, text) ,
           });

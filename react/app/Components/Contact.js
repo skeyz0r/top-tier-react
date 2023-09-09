@@ -20,14 +20,14 @@ const [send, setSend] = useState('Send');
 async function sendEmail(e) {
     setSend('Sending...')
     e.preventDefault();
-   const res = await fetch('/api', {
+   const res = await fetch('api', {
       method: 'POST',
       body: JSON.stringify(cont),
   })
           if(res.status === 200)
           {
            
-          setSend('Sent!', ()=>{setTimeout(3, setSend('Send'))});
+          setSend('Sent!');
 
 
           }
