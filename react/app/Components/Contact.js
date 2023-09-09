@@ -14,7 +14,29 @@ const opens = Open_Sans({
 export default function Contact()
 {
 
-const [cont, setCont] = useState({fname: '', lname: '', email: '', num: '', mes: ''})
+const [cont, setCont] = useState({fname: '', lname: '', email: '', num: '', mes: ''});
+const [send, setSend] = useState('Send');
+
+async function sendEmail(e) {
+    setSend('Sending...')
+    e.preventDefault();
+   const res = await fetch('/api', {
+      method: 'POST',
+      body: JSON.stringify(cont),
+  })
+          if(res.status === 200)
+          {
+           
+          setSend('Sent!', ()=>{setTimeout(3, setSend('Send'))});
+
+
+          }
+          else
+          {
+            alert('ERROR ', res.error)
+          }
+
+   }
 
     return(
         <div id="contF" className="py-10 flex flex-wrap justify-evenly">
@@ -23,7 +45,7 @@ const [cont, setCont] = useState({fname: '', lname: '', email: '', num: '', mes:
     <h3 className={`${opens.className} text-green-600 md:text-2xl py-3`}>CALL - 1 (920) 636-0831 OR</h3>
    <div className="flex gap-2 items-center">
    <Link target="_blank" href={'https://www.facebook.com/groups/801973678237251'}><GrFacebook size={30} color={'blue'}/></Link>
-    <p className="title">Contact Us </p>
+    <p className="title">Contact us</p>
 </div>
     <p className="message">Please don't hesitate to contact us for any questions or services!</p>
         <div className="flexi">
@@ -52,7 +74,7 @@ const [cont, setCont] = useState({fname: '', lname: '', email: '', num: '', mes:
         <textarea value={cont.mes} onChange={(e) => {setCont({...cont, mes: e.target.value})}} required placeholder="Message" type="text" className="input"></textarea>
     </label>
 
-    <button onClick={console.log(cont.fname)} className="submit">Send</button>
+    <button onClick={(e)=>{sendEmail(e)}} className="submit">{send}</button>
 </form>
 </div>
         </div>
