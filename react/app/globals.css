@@ -10,6 +10,10 @@
     background-position: center;
 }
 
+#srvImg{
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../public/image.jpg');
+}
+
 .gal{
   background: rgb(255,223,7);
   background: radial-gradient(circle, rgba(255,223,7,1) 0%, rgba(255,255,255,1) 32%, rgba(255,255,255,1) 100%);
@@ -34,20 +38,17 @@
 }
 
 .btn {
-  padding: 0;
-  margin: 0;
   border: none;
   background: none;
 }
 
 .btn {
-  --primary-color: #111;
+  --primary-color: rgb(5, 146, 29);
   --hovered-color: #c84747;
-  position: relative;
-  display: flex;
   font-weight: 600;
   gap: 0.5rem;
   align-items: center;
+  position: relative;
 }
 
 .btn p {
@@ -88,26 +89,18 @@
 
 .btn:hover svg {
   transform: translateX(4px);
-  color: var(--hovered-color)
+  color: var(--primary-color);
 }
 
 .btn svg {
-  color: var(--primary-color);
+  color: green;
   transition: 0.2s;
   position: relative;
   width: 15px;
   transition-delay: 0.2s;
+  filter: drop-shadow(2px 2px 3px black);
+
 }
-
-@media (max-width: 816px)
-{
-  #num{
-    display: none;
-  }
-}
-
-
-
 
 #formCont{
     display: flex;
@@ -196,6 +189,16 @@
     border: 1px solid rgba(105, 105, 105, 0.397);
     border-radius: 10px;
   }
+
+  .vis
+  {
+    display: flex;
+  }
+
+  .hid{
+    display: none;
+  }
+
   
   .form label .input + span {
     position: absolute;
@@ -240,7 +243,58 @@
     transition: all;
   }
 
+
+  .hamburger-lines {
+    cursor: pointer;
+    height: 26px;
+    width: 32px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    margin-right: 20px;
+    margin-left: 20px;
+
+  }
+  
+   .hamburger-lines .line {
+    height: 3px;
+    width: 100%;
+    border-radius: 10px;
+    background: #0a9c03;
+  }
+  
+  
+
   .submit:hover{
     background-color: transparent;
     color: green;
+  }
+
+  .ss{
+    transition: all 3s linear;
+  }
+
+
+  .small{
+    position: absolute;
+    right: 100%;
+  }
+
+  @media(max-width:740px)
+  {
+    .big{
+      position: absolute;
+      right: 100%;
+    }
+  }
+
+  @media(min-width:740px)
+  {
+    .ss{
+      position: absolute;
+      right: 100%;
+    }
+    .but{
+      display: none;
+    }
   }

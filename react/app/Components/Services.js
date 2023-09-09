@@ -39,7 +39,7 @@ export default function Services() {
 
 
 
-        <div  className="flex flex-col justify-center items-center w-full imgd rounded-rb bg-[url('../public/image.jpg')] h-500px">
+        <div id="srvImg" className="flex flex-col justify-center items-center w-full imgd rounded-rb h-500px">
       <h1 className={`${rubik.className} text-white  text-3xl md:text-6xl brightness-100 tracking-wider`}>TOP TIERS SERVICES</h1>
             <span className="text-center text-white md:text-xl mt-3">We pride ourselves on our attention to detail</span>
             <span id="srvCont"  className="text-center text-white md:text-xl"> and our commitment to providing excellent customer service.</span>
