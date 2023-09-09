@@ -105,10 +105,10 @@ function menuX()
     <nav className={`flex h-[56.8px] fixed w-full z-30 ${just} items-center border-solid border-b bg-navYellow border-gray-600`}>
             <Link id="logo" className={`${poppins.className} ${logo} pl-7 text-green-600 md:text-2xl`} href={'/'}>Top Tier Services LLC</Link>
                     <div id="menu" className={` ${vis}  flex items-center gap-3 md:gap-5 sm:mr-7 `}>
-                    <h3 onClick={() => { path !== '/' ? router.push('/') : srv.scrollIntoView({ behavior: "smooth", block: "start" })}} className={`${comf.className} big sm:${vis} cursor-pointer text-green-600 lg:text-xl py-3`}>Services</h3>
-                    <h3 onClick={() => { path !== '/' ? router.push('/') : cont.scrollIntoView({ behavior: "smooth", block: "end" })}} className={`${comf.className} big sm:${vis} cursor-pointer text-green-600 lg:text-xl py-3`}>Contact</h3>
-                    <h3 onClick={() => { path !== '/' ? router.push('/') : srv.scrollIntoView({ behavior: "smooth", block: "start" })}} className={`${comf.className} ss small sm:${vis} cursor-pointer text-green-600 lg:text-xl py-3`}>Services</h3>
-                    <h3 onClick={() => { path !== '/' ? router.push('/') : cont.scrollIntoView({ behavior: "smooth", block: "end" })}} className={`${comf.className} ss small sm:${vis} cursor-pointer text-green-600 lg:text-xl py-3`}>Contact</h3>
+                    <h3 onClick={() => { srv.scrollIntoView({ behavior: "smooth", block: "start" })}} className={`${comf.className} big sm:${vis} cursor-pointer text-green-600 lg:text-xl py-3`}>Services</h3>
+                    <h3 onClick={() => { cont.scrollIntoView({ behavior: "smooth", block: "end" })}} className={`${comf.className} big sm:${vis} cursor-pointer text-green-600 lg:text-xl py-3`}>Contact</h3>
+                    <h3 onClick={() => { srv.scrollIntoView({ behavior: "smooth", block: "start" })}} className={`${comf.className} ss small sm:${vis} cursor-pointer text-green-600 lg:text-xl py-3`}>Services</h3>
+                    <h3 onClick={() => { cont.scrollIntoView({ behavior: "smooth", block: "end" })}} className={`${comf.className} ss small sm:${vis} cursor-pointer text-green-600 lg:text-xl py-3`}>Contact</h3>
         <h3 id='num' className={`${opens.className} big text-green-600 md:text-2xl py-3`}>1 (920) 636-0831</h3>
         <Link className="big md:ml-0 ml-2" target="_blank" href={'https://www.facebook.com/groups/801973678237251'}><GrFacebook size={30} color={'blue'}/></Link>
         <div className={`hamburger-lines ${but}`} onClick={() =>{menuX()}}>
