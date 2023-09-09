@@ -114,8 +114,6 @@ function menuX()
                     <h3 onClick={() => { path !== '/' ? router.push('/') : cont.scrollIntoView({ behavior: "smooth", block: "end" })}} className={`${comf.className} ss small sm:${vis} cursor-pointer text-green-600 lg:text-xl py-3`}>Contact</h3>
         <h3 id='num' className={`${opens.className} big text-green-600 md:text-2xl py-3`}>1 (920) 636-0831</h3>
         <Link className="big md:ml-0 ml-2" target="_blank" href={'https://www.facebook.com/groups/801973678237251'}><GrFacebook size={30} color={'blue'}/></Link>
-        <h3 id='num' className={`${opens.className} ss small text-green-600 md:text-2xl py-3`}>1 (920) 636-0831</h3>
-        <Link className="small ss md:ml-0 ml-2" target="_blank" href={'https://www.facebook.com/groups/801973678237251'}><GrFacebook size={30} color={'blue'}/></Link>
         <div className={`hamburger-lines ${but}`} onClick={() =>{menuX()}}>
               <span className={`line ${line.o}`}></span>
               <span className={`line ${line.t}`}></span>
