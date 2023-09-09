@@ -83,8 +83,7 @@ function menuX()
      
       small[0].classList.add('small');    
       small[1].classList.add('small');    
-      small[2].classList.add('small');    
-      small[3].classList.add('small'); 
+
       setJust('justify-between');
       setOn(false);
       setLogo('visible');
@@ -94,9 +93,7 @@ function menuX()
     {
       small[0].classList.remove('small');
       small[1].classList.remove('small');
-      small[2].classList.remove('small');
       setJust('justify-end');
-      small[3].classList.remove('small');
             setLogo('hidden')
             setLine({o: 'hidden', t: 'hidden', th: ''})
             setOn(true)
