@@ -125,7 +125,7 @@ export default function Services() {
 
             </div>
 
-            <div className="whh flex flex-wrap items-center  2xl:justify-between px-10  pt-4 w-full pl-4">
+            <div className="whh flex flex-wrap items-center justify-between px-10  pt-4 w-full pl-4">
               <div className="why">
             <h2 className={`${rubik.className} pl-6 py-5 text-lg md:text-2xl `}><strong>Why choose us?</strong></h2>
                 <p className={`text-lg `}> Top Tier Services LLC doesn't just provide services – we craft experiences.
