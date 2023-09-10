@@ -91,8 +91,8 @@ export default function Services() {
               
               <h2 className={`${rubik.className} pl-4 mt-9 py-5 text-lg md:text-2xl`}><strong>Our services include:</strong></h2>
               
-             <div className="flex flex-wrap-reverse border-t border-b md:flex-nowrap">
-              <div  className="flex  py-10  mb-9 gap-7 flex-wrap  self-center">
+             <div className="flex items-center justify-center flex-wrap-reverse xl:flex-nowrap border-t border-b">
+              <div  className="flex md:w-[70%] py-10  mb-9 gap-7 flex-wrap  self-center">
              
               <div className="py-3 px-5 border rounded-2xl shadow-faint max-w-[610px]">
               <h3 className={`mb-1 ${dmsans.className}`}>House Repair:</h3>
@@ -120,13 +120,13 @@ export default function Services() {
 
             </div>
 
-              <Image  src={'/headi.png'} width={671} height={344} />
+              <Image className="flex object-contain" src={'/headi.png'} width={671} height={344} />
 
             </div>
 
-            <div className="pt-4 lg:w-2/3 pl-4 ">
+            <div className="pt-4 lg:w-1/2 pl-4">
             <h2 className={`${rubik.className} pl-6 py-5 text-lg md:text-2xl`}><strong>Why choose us?</strong></h2>
-                <p>Top Tier Services LLC doesn't just provide services – we craft experiences.
+                <p className={`text-lg`}> Top Tier Services LLC doesn't just provide services – we craft experiences.
                  With a dedication to quality, an eye for detail, and a passion for perfection, we take your visions and turn them into reality.
                  Our team of experts is committed to delivering results that exceed your expectations, every time.</p>
             </div>
