@@ -26,16 +26,14 @@ async function sendEmail(e) {
   })
           if(res.status === 200)
           {
-           
+            setTimeout( () => setSend('Send'), 7000)
           setSend('Sent!');
-
 
           }
           else
           {
             alert('ERROR ', res.error)
           }
-
    }
 
     return(
