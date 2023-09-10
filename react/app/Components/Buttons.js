@@ -14,7 +14,7 @@ export default function Buttons()
           <Image
           alt="quoteImg"
             src={'/free.svg'}
-            width={80} className="sm:h-auto h-[50px]"
+            width={80} className="h-[50px]"
             height={80} />
           <h2 className={`${dmsans.className} text-lg sm:text-2xl`}>FREE QUOTE</h2>
           <span className="text-gray-500  sm:text-sm text-xs">Free qoutes on any selecte services.</span> 
@@ -25,7 +25,7 @@ export default function Buttons()
           <Image
           alt="refundImg"
             src={'/refund.svg'}
-            width={80} className="sm:h-auto h-[50px]"
+            width={80} className="h-[50px]"
             height={80} />
           <h2 className={`${dmsans.className} text-lg sm:text-2xl`}>REFUND</h2>
           <span className="text-gray-500  sm:text-sm text-xs">Money back guaranteed, damage coverage</span>
@@ -36,7 +36,7 @@ export default function Buttons()
         <div className="flex mb-3 flex-col items-center gap-2">
           <Image
           alt="flexPayImg"
-            className="mb-2 sm:h-auto h-[50px]"
+            className="mb-2 h-[50px]"
             src={'/pay.svg'}
             width={70}  
             height={70} />
@@ -50,7 +50,7 @@ export default function Buttons()
           <Image
           alt="satImg"
             src={'/happy.svg'}
-            width={80} className="sm:h-auto h-[50px]"
+            width={80} className="h-[50px]"
             height={80} />
            <h2 className={`${dmsans.className} text-lg sm:text-2xl`}>100% SATISFACTION</h2>
           <span className="text-gray-500  sm:text-sm text-xs">We are proud to have a 5 star rating</span>

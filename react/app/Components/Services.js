@@ -3,6 +3,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { DM_Sans, Raleway, Comfortaa, Roboto } from "next/font/google"
 import { Rubik } from "next/font/google"
+import Buttons from "./Buttons"
 
 /* fonts */
 const dmsans = DM_Sans({
@@ -39,7 +40,7 @@ export default function Services() {
 
 
 
-        <div id="srvImg" className="flex flex-col justify-center items-center w-full imgd rounded-rb h-[400px] md:h-[500px] 3xl:h-[800px]">
+        <div id="srvImg" className="flex flex-col justify-center items-center w-full imgd rounded-rb h-[400px] md:h-[500px] 2xl:h-[800px] ">
       <h1 className={`${rubik.className} text-white  text-3xl md:text-6xl brightness-100 tracking-wider`}>TOP TIERS SERVICES</h1>
             <span className="text-center text-white md:text-xl mt-3">We pride ourselves on our attention to detail</span>
             <span id="srvCont"  className="text-center text-white md:text-xl"> and our commitment to providing excellent customer service.</span>
@@ -92,7 +93,7 @@ export default function Services() {
               <h2 className={`${rubik.className} pl-4 mt-9 py-5 text-lg md:text-2xl`}><strong>Our services include:</strong></h2>
               
              <div className="flex items-center justify-center flex-wrap-reverse xl:flex-nowrap border-t border-b">
-              <div  className="flex md:w-[70%] py-10  mb-9 gap-7 flex-wrap  self-center">
+              <div  className="flex md:w-[50%] 2xl:w-[70%] py-10  mb-9 gap-7 flex-wrap  self-center">
              
               <div className="py-3 px-5 border rounded-2xl shadow-faint max-w-[610px]">
               <h3 className={`mb-1 ${dmsans.className}`}>House Repair:</h3>
@@ -124,11 +125,14 @@ export default function Services() {
 
             </div>
 
-            <div className="pt-4 lg:w-1/2 pl-4">
-            <h2 className={`${rubik.className} pl-6 py-5 text-lg md:text-2xl`}><strong>Why choose us?</strong></h2>
-                <p className={`text-lg`}> Top Tier Services LLC doesn't just provide services – we craft experiences.
+            <div className="whh flex flex-wrap items-center  2xl:justify-between px-10  pt-4 w-full pl-4">
+              <div className="why">
+            <h2 className={`${rubik.className} pl-6 py-5 text-lg md:text-2xl `}><strong>Why choose us?</strong></h2>
+                <p className={`text-lg `}> Top Tier Services LLC doesn't just provide services – we craft experiences.
                  With a dedication to quality, an eye for detail, and a passion for perfection, we take your visions and turn them into reality.
                  Our team of experts is committed to delivering results that exceed your expectations, every time.</p>
+              </div>
+                 <Buttons/>
             </div>
             </div>
     

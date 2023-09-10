@@ -317,18 +317,39 @@
     right: 0;
   }
 
-  #menuToggle input:checked ~ #logo
-  {
-    display: none;
-  }
-
   .submit:hover{
     background-color: transparent;
     color: green;
   }
 
+  .why
+  {
+    width: 40%;
+  }
 
 
+
+@media(max-width: 2300px)
+{
+  .whh
+  {
+    justify-content: center;
+  }
+  .why
+  {
+    width: 100%;
+  }
+  .why p{
+    width: 80%;
+  }
+}
+
+@media(max-width: 920px)
+{
+  .why p{
+    width:fit-content;
+  }
+}
 
   @media(min-width:740px){
     .but{
