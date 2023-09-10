@@ -44,10 +44,6 @@ const router = useRouter();
 
   check === true ? setLogo('opacity-0'): setLogo('');
 
-  if(path.includes('/services'))
-  {
-      setCheck(false);
-  }
 
   window.addEventListener('resize', function() {
     if(window.innerWidth > 740)
