@@ -125,12 +125,12 @@ export default function Services() {
 
             </div>
 
-            <div className="whh flex flex-wrap items-center justify-between px-10  pt-4 w-full pl-4">
+            <div className="whh flex flex-wrap items-center justify-between sm:px-10  pt-4 w-full pl-4">
               <div className="why">
             <h2 className={`${rubik.className} pl-6 py-5 text-lg md:text-2xl `}><strong>Why choose us?</strong></h2>
                 <p className={`text-lg `}> Top Tier Services LLC doesn't just provide services – we craft experiences.
                  With a dedication to quality, an eye for detail, and a passion for perfection, we take your visions and turn them into reality.
-                 Our team of experts is committed to delivering results that exceed your expectations, every time.</p>
+                 Our team of experts is committed to delivering results that exceed your expectations, <strong>every time</strong>.</p>
               </div>
                  <Buttons/>
             </div>
