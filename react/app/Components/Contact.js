@@ -7,7 +7,7 @@ import { Open_Sans } from "next/font/google"
 
 
 const opens = Open_Sans({
-  weight: '300',
+  weight: '400',
   subsets: ['latin'],
 })
 
@@ -38,14 +38,18 @@ async function sendEmail(e) {
 
     return(
         <div id="contF" className="py-10 flex flex-wrap justify-evenly">
-         <div id="formCont">
-    <form className="form" method="POST">
-    <h3 className={`${opens.className} text-green-600 md:text-2xl py-3`}>CALL<h2>1 (920) 636-0831</h2>OR</h3>
-   <div className="flex gap-2 items-center">
-   <Link target="_blank" href={'https://www.facebook.com/groups/801973678237251'}><GrFacebook size={30} color={'blue'}/></Link>
-    <p className="title">Contact us</p>
+         <div id="formCont" className="flex-col w-full">
+         <div className="flex flex-col items-center justify-center">
+         <div className={`${opens.className} flex gap-3 items-center text-green-600 md:text-2xl py-3`}>CALL - <h2> 1 (920) 636-0831 </h2> OR VISIT 
+    <Link className="rounded-md" target="_blank" href={'https://www.facebook.com/groups/801973678237251'}><GrFacebook size={30} color={'blue'}/></Link>
 </div>
-    <p className="message">Please don't hesitate to contact us for any questions or services!</p>
+   <div className="flex gap-2 items-center">
+    <p className="title">You may also Contact us directly</p>
+</div>
+         </div>
+    <form className="form self-center" method="POST">
+    <p className="message">Please fill out the following...</p>
+
         <div className="flexi">
         <label>
             <input value={cont.fname} onChange={(e) => {setCont({...cont, fname: e.target.value})}} required placeholder="" type="text" className="input"/>

@@ -47,7 +47,7 @@ export default function Services() {
         </div>
 
     <div className="flex flex-wrap gap-14 shadow-mainsh justify-evenly py-12 px-6">
-     <Link href={'/services/house-service'}  className={`${comfortaa.className} card transition-all text-xl h-[200px] text-white   rounded-xl  `}>
+     <Link href={'/services/house-service'} className={`${comfortaa.className} card transition-all text-xl h-[200px] text-white   rounded-xl  `}>
         <Image
         alt="houseServImg"
         className=" brightness-[.6] hover:brightness-100 rounded-xl shadow-card h-full mb-3 "
@@ -90,10 +90,10 @@ export default function Services() {
                 Our comprehensive range of services is designed to cater to all your property needs, from intricate house repairs to crafting picturesque landscapes, and even maintaining pristine cleanliness. 
                 With a keen eye for detail and a commitment to excellence, we take your vision and turn it into reality.</h2>
               
-              <h2 className={`${rubik.className} pl-4 mt-9 py-5 text-lg md:text-2xl`}><strong>Our services include:</strong></h2>
+              <h2 className={`${rubik.className} pl-4 mt-9 py-5 pt-0 text-lg md:text-2xl`}><strong>Our services include:</strong></h2>
               
              <div className="flex items-center justify-center flex-wrap-reverse xl:flex-nowrap border-t border-b">
-              <div  className="flex md:w-[50%] 2xl:w-[70%] py-10  mb-9 gap-7 flex-wrap  self-center">
+              <div  className="flex md:w-[50%] 2xl:w-[70%] pb-10 xl:pt-10 pt-0   mb-9 gap-7 flex-wrap  self-center">
              
               <div className="py-3 px-5 border rounded-2xl shadow-faint max-w-[610px]">
               <h3 className={`mb-1 ${dmsans.className}`}>House Repair:</h3>

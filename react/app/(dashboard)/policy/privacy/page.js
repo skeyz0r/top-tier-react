@@ -5,7 +5,7 @@ export default function PrivacyPolicy()
 {
     return(
         <main className="flex flex-col w-full py-20">
-        <div className="w-[90%] sm:w-[85%] px-10 py-10 self-center shadow-mainsh">
+        <div className="w-[90%] sm:w-[85%] px-3 md:px-10 py-10 self-center shadow-mainsh">
     <h1 className={``}>Privacy Policy for Top-Tier-Services.com</h1>
 
     <p className={`my-1`}>Top-Tier-Services.com ("we," "our," or "us") is committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy outlines our practices regarding the collection, use, and disclosure of your personal information when you use our website, products, or services. By accessing or using our website or services, you consent to the practices described in this Privacy Policy.</p>
@@ -93,7 +93,7 @@ export default function PrivacyPolicy()
 
     <strong><h2 className={`my-6 text-lg`}>8. Contact Us</h2></strong>
 
-    <p className={`my-1`}>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at toptierservices9@gmail.com or call +1 (920) 636-0831 .</p>
+    <div className={`my-1`}>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at <p>toptierservices9@gmail.com or call +1 (920) 636 0831.</p></div>
 
     <p className={`my-1`}>By using our website or services, you acknowledge that you have read and understood this Privacy Policy and consent to our data practices as described herein.</p>
 
