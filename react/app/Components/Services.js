@@ -39,7 +39,7 @@ export default function Services() {
 
 
 
-        <div id="srvImg" className="flex flex-col justify-center items-center w-full imgd rounded-rb h-500px">
+        <div id="srvImg" className="flex flex-col justify-center items-center w-full imgd rounded-rb h-[800px]">
       <h1 className={`${rubik.className} text-white  text-3xl md:text-6xl brightness-100 tracking-wider`}>TOP TIERS SERVICES</h1>
             <span className="text-center text-white md:text-xl mt-3">We pride ourselves on our attention to detail</span>
             <span id="srvCont"  className="text-center text-white md:text-xl"> and our commitment to providing excellent customer service.</span>
@@ -91,8 +91,8 @@ export default function Services() {
               
               <h2 className={`${rubik.className} pl-4 mt-9 py-5 text-lg md:text-2xl`}><strong>Our services include:</strong></h2>
               
-             
-              <div className="flex border-t border-b py-10  mb-9 gap-7 flex-wrap xxl:w-[70%] self-center">
+             <div className="flex flex-wrap-reverse border-t border-b md:flex-nowrap">
+              <div  className="flex  py-10  mb-9 gap-7 flex-wrap  self-center">
              
               <div className="py-3 px-5 border rounded-2xl shadow-faint max-w-[610px]">
               <h3 className={`mb-1 ${dmsans.className}`}>House Repair:</h3>
@@ -117,6 +117,10 @@ export default function Services() {
               <p className={`${rob.className}text-gray-600`}>We also provide home, gutter, and commercial cleaning services that bring a new level of freshness and order to your spaces. 
 </p>
             </div>
+
+            </div>
+
+              <Image  src={'/headi.png'} width={671} height={344} />
 
             </div>
 

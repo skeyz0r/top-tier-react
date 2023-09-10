@@ -32,7 +32,7 @@ async function sendEmail(e) {
           }
           else
           {
-            alert('ERROR ', res.error)
+            alert('ERROR ', res)
           }
    }
 

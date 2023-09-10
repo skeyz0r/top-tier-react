@@ -37,72 +37,16 @@
  }
 }
 
-.btn {
-  border: none;
-  background: none;
-}
 
-.btn {
-  --primary-color: rgb(5, 146, 29);
-  --hovered-color: #c84747;
-  font-weight: 600;
-  gap: 0.5rem;
-  align-items: center;
-}
-
-.btn p {
-  margin: 0;
-  position: relative;
-  color: var(--primary-color)
-}
-
-.btn::after {
-  position: absolute;
-  content: "";
-  width: 0;
-  left: 0;
-  bottom: -7px;
-  height: 2px;
-  transition: 0.3s ease-out;
-}
-
-.btn p::before {
-  position: absolute;
-/*   box-sizing: border-box; */
-  content: "GET FREE QUOTE";
-  width: 0%;
-  inset: 0;
-  color: var(--hovered-color);
-  overflow: hidden;
-  transition: 0.3s ease-out;
-}
-
-.btn:hover::after {
-  width: 100%;
-}
-
-.btn:hover p::before {
-  width: 100%;
-}
-
-.btn:hover svg {
-  transform: translateX(4px);
-  color: var(--primary-color);
-}
-
-.btn svg {
-  color: green;
-  transition: 0.2s;
-  position: relative;
-  width: 15px;
-  transition-delay: 0.2s;
-  filter: drop-shadow(2px 2px 3px black);
-
-}
 
 #formCont{
     display: flex;
     justify-content: center;
+}
+
+#services{
+  background-image: url('../public/head.png');
+  background-position: start;
 }
 
 .form {
