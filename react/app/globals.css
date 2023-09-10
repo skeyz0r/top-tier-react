@@ -188,15 +188,8 @@
   
   #menuToggle li
   {
-    text-decoration: none;
-    color: #232323;
-    
+    text-decoration: none;    
     transition: color 0.3s ease;
-  }
-  
-  #menuToggle li:hover
-  {
-    color: greenyellow;
   }
   
   
@@ -228,7 +221,7 @@
     margin-bottom: 5px;
     position: relative;
     
-    background: #54dd0b;
+    background:  rgb(22 163 74);;
     border-radius: 3px;
     
     z-index: 1;
@@ -256,6 +249,8 @@
    */
   #menuToggle input:checked ~ span
   {
+    top: 4px;
+
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
     background: #232323;
