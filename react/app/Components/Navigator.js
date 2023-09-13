@@ -57,7 +57,7 @@ const router = useRouter();
 
 const navi = (prop) => {
 
-  path.includes('/services') ? router.push('/') : prop.scrollIntoView({ behavior: "smooth", block: "start" });
+  path !== '/' ? router.push('/') : prop.scrollIntoView({ behavior: "smooth", block: "start" });
   setCheck(!check);
 }
   
