@@ -1,4 +1,3 @@
-import Image from "next/image"
 import Link from "next/link"
 import { Poppins, Comfortaa, Sarala } from "next/font/google"
 
