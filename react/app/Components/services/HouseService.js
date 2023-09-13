@@ -1,6 +1,7 @@
+'use client'
 import { Poppins, Comfortaa, Sarala } from "next/font/google"
 import Link from "next/link"
-
+import { useEffect } from "react"
 
 /* fonts */
 const poppinsB = Poppins({
@@ -29,12 +30,11 @@ const sarala = Sarala({
 export default function House()
 {
 
-   
     return(
-        <section className={`mb-[8.21%] pt-20 px-5 flex flex-col`}>
-           <div className="flex gap-8"> <Link className="text-blue-700 hover:underline" href={'/services/house-service'}>Plowing Services</Link>
-        <Link className="text-blue-700 hover:underline"  href={'/services/landscaping'}>Landscaping Services</Link></div>
-                    <h3 className={`${sarala.className} mt-20 text-2xl`}>Top Tier Commercial & House Services</h3>
+        <section className={`md:h-[95%]  pt-20 px-5 flex flex-col`}>
+         <h3 className={`${sarala.className} mt-20 text-2xl`}>Other Top Tier  Services:</h3>
+             <div className="flex gap-8 "> <Link className="text-blue-700 hover:underline" href={'/services/landscaping'}>Landscapig Services</Link>
+        <Link className="text-blue-700 hover:underline"  href={'/services/plowing'}>Plowing Services</Link></div>
     
 
         <div className="flex md:justify-between flex-wrap justify-center">

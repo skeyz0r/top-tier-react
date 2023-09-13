@@ -38,14 +38,22 @@ const router = useRouter();
   useEffect(() => {
     if (typeof window !== 'undefined')
     {
-  setSrv(document.getElementById('srvCont'));
+      if(path.includes('/services'))
+      {
+        document.getElementsByTagName('html')[0].classList.add('h-full')
+      document.body.classList.add('h-full');
+      }
+      else
+      {
+        document.getElementsByTagName('html')[0].classList.remove('h-full')
+        document.body.classList.remove('h-full');
+      }
+      setSrv(document.getElementById('srvCont'));
   setCont(document.getElementById('contF'));
   setVis('flex')
     }
 
   check === true ? setLogo('opacity-0'): setLogo('');
-
-
   window.addEventListener('resize', function() {
     if(window.innerWidth > 740)
     {
@@ -64,14 +72,14 @@ const navi = (prop) => {
   
 
   return (
-    <nav className={`flex h-[56.8px] justify-between fixed w-full z-30 items-center border-solid border-b bg-navYellow border-gray-600`}>
-            <Link className={`${poppins.className} ${logo} logo pl-7 text-green-600 md:text-2xl`} href={'/'}><Image alt="logo" src={'/logo.png'} height={60} width={60}/></Link>
+    <nav className={`flex h-[76.8px] justify-between fixed w-full z-30 items-center border-solid border-b bg-navYellow border-gray-600`}>
+            <Link className={`${poppins.className} ${logo} logo pl-7 text-green-600 md:text-2xl`} href={'/'}><Image alt="logo" src={'/logo.svg'} height={80} width={80}/></Link>
                     <div className={` ${vis}  flex items-center gap-3 md:gap-5 sm:mr-7 `}>
                     <h3 onClick={() => {   path.includes('/services') ? router.push('/') : srv.scrollIntoView({ behavior: "smooth", block: "start" });}} className={`${comf.className} hidden md:block  sm:${vis} cursor-pointer text-green-600 lg:text-xl py-3`}>Services</h3>
                     <h3 onClick={() => {   path.includes('/services') ? router.push('/') : cont.scrollIntoView({ behavior: "smooth", block: "start" });}} className={`${comf.className} hidden md:block  sm:${vis} cursor-pointer text-green-600 lg:text-xl py-3`}>Contact</h3>
         <h3 id='num' className={`${opens.className}  hidden md:block text-green-600 md:text-2xl py-3`}>1 (920) 636-0831</h3>
         <Link className=" hidden md:block md:ml-0 ml-2" target="_blank" href={'https://www.facebook.com/groups/801973678237251'}><GrFacebook size={30} color={'blue'}/></Link>
-        <div className="md:hidden block" id="menuToggle">
+        <div className="md:hidden block mt-[13px]" id="menuToggle">
     <input checked={check} onChange={() => {setCheck(!check)}} type="checkbox" />
     <span></span>
     <span></span>

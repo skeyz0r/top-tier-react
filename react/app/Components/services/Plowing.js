@@ -29,10 +29,10 @@ const sarala = Sarala({
 export default function Plowing()
 {
     return(
-        <section className={`mb-[15.5%] pt-20 px-5 flex flex-col`}>
-       <div className="flex gap-8"> <Link className="text-blue-700 hover:underline" href={'/services/house-service'}>Handyman Services</Link>
-        <Link className="text-blue-700 hover:underline"  href={'/services/landscaping'}>Landscaping Services</Link></div>
-                    <h3 className={`${sarala.className} mt-20 text-2xl`}>Top Tier Plowing Services</h3>
+        <section className={`md:h-[95%]  pt-20 px-5 flex flex-col`}>
+    <h3 className={`${sarala.className} mt-20 text-2xl`}>Other Top Tier  Services:</h3>
+             <div className="flex gap-8 "> <Link className="text-blue-700 hover:underline" href={'/services/landscaping'}>Landscapig Services</Link>
+        <Link className="text-blue-700 hover:underline"  href={'/services/house-service'}>Handyman Services</Link></div>
         <div className="flex md:justify-between flex-wrap justify-center">
         <div className="flex flex-col gap-5 my-9 ml-[2%]">
 
