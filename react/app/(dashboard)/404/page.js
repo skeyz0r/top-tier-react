@@ -1,7 +1,7 @@
 
 
 
-export default function Error_Page()
+export default function Error()
 {
 
     return(
