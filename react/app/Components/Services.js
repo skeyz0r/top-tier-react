@@ -40,10 +40,11 @@ export default function Services() {
 
 
 
-        <div id="srvImg" className="flex flex-col justify-center items-center w-full imgd rounded-rb h-[400px] md:h-[500px] 2xl:h-[800px] ">
+        <div id="srvImg" className=" flex flex-col justify-center items-center w-full imgd rounded-rb h-[400px] md:h-[500px] 2xl:h-[800px] ">
       <h1 className={`${rubik.className} text-white  text-3xl md:text-6xl brightness-100 tracking-wider`}>TOP TIERS SERVICES</h1>
-            <span className="text-center text-white md:text-xl mt-3">We pride ourselves on our attention to detail</span>
-            <span id="srvCont"  className="text-center text-white md:text-xl"> and our commitment to providing excellent customer service.</span>
+            <span className="text-center text-gray-300 md:text-xl mt-3">We pride ourselves on our attention to detail</span>
+            <span id="srvCont"  className="text-center text-gray-300 md:text-xl"> and our commitment to providing excellent customer service.</span>
+        <p  className="text-center text-white lg mt-6 md:text-2xl">Construction | Landscaping | Plowing Services in Wisconsin</p>
         </div>
 
     <div className="flex flex-wrap gap-14 shadow-mainsh justify-evenly py-12 px-6">
@@ -51,7 +52,7 @@ export default function Services() {
         <Image
         alt="houseServImg"
         className=" brightness-[.6] hover:brightness-100 rounded-xl shadow-card h-full mb-3 "
-          src={'/services/handyImg.jpg'}
+          src={'/services/handyman.jpg'}
           width={300}
           height={10}
         />
@@ -62,7 +63,7 @@ export default function Services() {
         <Image
         alt="landServImg"
         className=" brightness-[.6] hover:brightness-100 rounded-xl shadow-card h-full mb-3 "
-          src={'/services/lawnServ.jpg'}
+          src={'/services/landscapeSrv.jpg'}
           width={300}
           height={10}
         />
@@ -74,7 +75,7 @@ export default function Services() {
         <Image
         alt="plowServImg"
         className=" brightness-[.6] hover:brightness-100 rounded-xl shadow-card h-full mb-3 "
-          src={'/services/plowImg.jpg'}
+          src={'/services/plow.jpg'}
           width={300}
           height={10}
         />

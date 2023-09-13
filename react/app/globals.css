@@ -44,10 +44,6 @@
     justify-content: center;
 }
 
-#services{
-  background-image: url('../public/head.png');
-  background-position: start;
-}
 
 .form {
     display: flex;
@@ -337,7 +333,7 @@
   .why
   {
     width: 100%;
-    
+
   }
   .why p{
     width: 80%;

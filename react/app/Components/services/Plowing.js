@@ -1,4 +1,3 @@
-import Image from "next/image"
 import Link from "next/link"
 import { Poppins, Comfortaa, Sarala } from "next/font/google"
 
@@ -21,7 +20,7 @@ const comfortaa = Comfortaa({
 })
 
 const sarala = Sarala({
-    weight: '700',
+    weight: '400',
     subsets: ['latin'],
   })
 
@@ -31,6 +30,8 @@ export default function Plowing()
 {
     return(
         <section className={`mb-[15.5%] pt-20 px-5 flex flex-col`}>
+       <div className="flex gap-8"> <Link className="text-blue-700 hover:underline" href={'/services/house-service'}>Handyman Services</Link>
+        <Link className="text-blue-700 hover:underline"  href={'/services/landscaping'}>Landscaping Services</Link></div>
                     <h3 className={`${sarala.className} mt-20 text-2xl`}>Top Tier Plowing Services</h3>
         <div className="flex md:justify-between flex-wrap justify-center">
         <div className="flex flex-col gap-5 my-9 ml-[2%]">
@@ -44,10 +45,11 @@ export default function Plowing()
 
 <div className="md:mt-[5%] md:mr-[5%] w-fit mb-11 md:mb-0">
 <h1 className={`${poppinsB.className} shadow-line border-t-4 py-3 px-2 border-solid border-navYellow text-3xl`}>GET FREE QUOTE!</h1>
-<h2 className={`${poppinsB.className} text-center border-y-4 py-3 px-2 border-solid border-navYellow text-xl`}>1 (920)-636-08-31</h2>
+<p className={`${poppinsB.className} text-center border-y-4 py-3 px-2 border-solid border-navYellow text-xl`}>1 (920)-636-08-31</p>
 </div>
 
-</div>            
+</div>        
+
         </section>
     )
 }

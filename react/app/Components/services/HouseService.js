@@ -24,12 +24,7 @@ const sarala = Sarala({
   })
 
 
-  const caveat = Caveat({
-    weight: '600',
-    subsets: ['latin'],
-  })
 
-  
 
 export default function House()
 {
@@ -37,6 +32,8 @@ export default function House()
    
     return(
         <section className={`mb-[8.21%] pt-20 px-5 flex flex-col`}>
+           <div className="flex gap-8"> <Link className="text-blue-700 hover:underline" href={'/services/house-service'}>Plowing Services</Link>
+        <Link className="text-blue-700 hover:underline"  href={'/services/landscaping'}>Landscaping Services</Link></div>
                     <h3 className={`${sarala.className} mt-20 text-2xl`}>Top Tier Commercial & House Services</h3>
     
 
@@ -60,11 +57,10 @@ export default function House()
 
 <div className="md:mt-[5%] md:mr-[5%] w-fit mb-11 md:mb-0">
 <h1 className={`${poppinsB.className} shadow-line border-t-4 py-3 px-2 border-solid border-navYellow text-3xl`}>GET FREE QUOTE!</h1>
-<h2 className={`${poppinsB.className} text-center border-y-4 py-3 px-2 border-solid border-navYellow text-xl`}>1 (920)-636-08-31</h2>
+<p className={`${poppinsB.className} text-center border-y-4 py-3 px-2 border-solid border-navYellow text-xl`}>1 (920)-636-08-31</p>
 </div>
 </div> 
-   <h2 className={`md:text-2xl text-xl ml-[4%] ${sarala.className} mt-4 mb-7 `}>Top Tier House and Handyman Services 
-                     <span className={`tracking-wider ${ caveat.className}`}> — Elevating Homes through Excellence</span></h2>           
+         <h2 className={` md:text-xl ml-[4%] ${poppinsL.className} mt-4 mb-7 `}>Top Tier House and Handyman Services - Elevating Homes through Excellence</h2>           
         </section>
     )
 }
