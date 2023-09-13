@@ -65,7 +65,7 @@ const navi = (prop) => {
 
   return (
     <nav className={`flex h-[56.8px] justify-between fixed w-full z-30 items-center border-solid border-b bg-navYellow border-gray-600`}>
-            <Link className={`${poppins.className} ${logo} logo pl-7 text-green-600 md:text-2xl`} href={'/'}><Image src={'/logo.png'} height={60} width={60}/></Link>
+            <Link className={`${poppins.className} ${logo} logo pl-7 text-green-600 md:text-2xl`} href={'/'}><Image alt="logo" src={'/logo.png'} height={60} width={60}/></Link>
                     <div className={` ${vis}  flex items-center gap-3 md:gap-5 sm:mr-7 `}>
                     <h3 onClick={() => {   path.includes('/services') ? router.push('/') : srv.scrollIntoView({ behavior: "smooth", block: "start" });}} className={`${comf.className} hidden md:block  sm:${vis} cursor-pointer text-green-600 lg:text-xl py-3`}>Services</h3>
                     <h3 onClick={() => {   path.includes('/services') ? router.push('/') : cont.scrollIntoView({ behavior: "smooth", block: "start" });}} className={`${comf.className} hidden md:block  sm:${vis} cursor-pointer text-green-600 lg:text-xl py-3`}>Contact</h3>
@@ -77,7 +77,7 @@ const navi = (prop) => {
     <span></span>
     <span></span>
     <ul id="menu">
-    <h1 className={`${poppins.className} self-center py-10  text-green-600 text-3xl`}>Top Tier Services</h1>
+    <h2 className={`${poppins.className} self-center py-10  text-green-600 text-3xl`}>Top Tier Services</h2>
      <li onClick={() => {navi(srv)}} className={`${comf.className} hover:shadow-sm sm:${vis} cursor-pointer text-black lg:text-xl py-3`}>Services</li>
      <li onClick={() => {navi(cont)}}className={`${comf.className} hover:shadow-sm  sm:${vis} cursor-pointer text-black lg:text-xl py-3`}>Contact</li>
      <li className={`${opens.className} flex  text-green-600 md:text-2xl py-3`}><h3>1 (920) 636-0831 </h3>      

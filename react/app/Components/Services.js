@@ -122,7 +122,7 @@ export default function Services() {
 
             </div>
 
-              <Image className="flex object-contain" src={'/headi.png'} width={671} height={344} />
+              <Image alt="constructionImg" className="flex object-contain" src={'/headi.png'} width={671} height={344} />
 
             </div>
 

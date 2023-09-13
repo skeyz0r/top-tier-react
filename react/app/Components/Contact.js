@@ -1,6 +1,5 @@
 'use client'
 import { useState } from "react"
-import Slideshow from "./Slideshow"
 import {GrFacebook} from "react-icons/gr"
 import Link from "next/link"
 import { Open_Sans } from "next/font/google"
