@@ -44,7 +44,7 @@ export default function Services() {
       <h1 className={`${rubik.className} text-white  text-3xl md:text-6xl brightness-100 tracking-wider`}>TOP TIERS SERVICES</h1>
             <span className="text-center text-gray-300 md:text-xl mt-3">We pride ourselves on our attention to detail</span>
             <span id="srvCont"  className="text-center text-gray-300 md:text-xl"> and our commitment to providing excellent customer service.</span>
-        <p  className="text-center text-white lg mt-6 md:text-2xl">Construction | Landscaping | Plowing Services in Wisconsin</p>
+        <p  className="text-center text-white sm:w-fit w-[80%] lg mt-6 md:text-2xl">Construction | Landscaping | Plowing Services in Wisconsin</p>
         </div>
 
     <div className="flex flex-wrap gap-14 shadow-mainsh justify-evenly py-12 px-6">
