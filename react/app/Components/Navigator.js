@@ -1,5 +1,6 @@
 'use client'
 import Link from "next/link"
+import Image from "next/image"
 import { Open_Sans, Poppins, Comfortaa } from 'next/font/google'
 import {GrFacebook} from "react-icons/gr"
 import { useEffect, useState } from "react"
@@ -64,7 +65,7 @@ const navi = (prop) => {
 
   return (
     <nav className={`flex h-[56.8px] justify-between fixed w-full z-30 items-center border-solid border-b bg-navYellow border-gray-600`}>
-            <Link className={`${poppins.className} ${logo} logo pl-7 text-green-600 md:text-2xl`} href={'/'}>Top Tier Services</Link>
+            <Link className={`${poppins.className} ${logo} logo pl-7 text-green-600 md:text-2xl`} href={'/'}><Image src={'/logo.png'} height={60} width={60}/></Link>
                     <div className={` ${vis}  flex items-center gap-3 md:gap-5 sm:mr-7 `}>
                     <h3 onClick={() => {   path.includes('/services') ? router.push('/') : srv.scrollIntoView({ behavior: "smooth", block: "start" });}} className={`${comf.className} hidden md:block  sm:${vis} cursor-pointer text-green-600 lg:text-xl py-3`}>Services</h3>
                     <h3 onClick={() => {   path.includes('/services') ? router.push('/') : cont.scrollIntoView({ behavior: "smooth", block: "start" });}} className={`${comf.className} hidden md:block  sm:${vis} cursor-pointer text-green-600 lg:text-xl py-3`}>Contact</h3>
