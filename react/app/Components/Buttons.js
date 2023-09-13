@@ -40,8 +40,8 @@ export default function Buttons()
             src={'/pay.svg'}
             width={70}  
             height={70} />
-         <h2 className={`${dmsans.className} text-lg sm:text-2xl`}>FLEXIBLE PAYMENTS</h2>
-         <span className="text-gray-500  sm:text-sm text-xs">Pay with the world’s most popular and secure </span> 
+         <h2 className={`${dmsans.className} text-lg sm:text-2xl`}>SECURE PAYMENTS</h2>
+         <span className="text-gray-500  sm:text-sm text-xs">Pay with the cash or check - most trusted</span> 
          <span className="text-gray-500  sm:text-sm text-xs">payment methods.</span>
         </div>
 
