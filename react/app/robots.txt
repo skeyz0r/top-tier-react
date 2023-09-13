@@ -2,3 +2,7 @@ User-agent: Googlebot-Image
 # Repeated 'disallow' rules for each image:
 Disallow: /headi.png
 Disallow: /image.jpg
+Disallow: /policy/
+
+
+Sitemap: https://www.top-tier-services.com/sitemap.xml
