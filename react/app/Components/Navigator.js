@@ -38,7 +38,7 @@ const router = useRouter();
   useEffect(() => {
     if (typeof window !== 'undefined')
     {
-      if(path.includes('/services'))
+      if(path !== '/' || path !== '/policy')
       {
         document.getElementsByTagName('html')[0].classList.add('h-full')
       document.body.classList.add('h-full');

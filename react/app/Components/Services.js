@@ -36,18 +36,16 @@ const rubik = Rubik({
 
 export default function Services() {
   return (
-   <section  className="flex flex-col bg-[#f3f3f326] mt-20 w-11/12 self-center shadow-mainsh">
+   <section className="flex flex-col bg-[#f3f3f326] mt-20 w-11/12 self-center shadow-mainsh">
 
 
 
-        <div id="srvImg" className=" flex flex-col justify-center items-center w-full imgd rounded-rb h-[400px] md:h-[500px] 2xl:h-[800px] ">
+        <div  id="srvImg" className=" flex flex-col justify-center items-center w-full imgd rounded-rb h-[400px] md:h-[600px] 2xl:h-[800px] ">
       <h1 className={`${rubik.className} text-white  text-3xl md:text-6xl brightness-100 tracking-wider`}>TOP TIERS SERVICES</h1>
-            <span className="text-center text-gray-300 md:text-xl mt-3">We pride ourselves on our attention to detail</span>
-            <span id="srvCont"  className="text-center text-gray-300 md:text-xl"> and our commitment to providing excellent customer service.</span>
-        <p  className="text-center text-white sm:w-fit w-[80%] lg mt-6 md:text-2xl">Construction | Landscaping | Plowing Services in Wisconsin</p>
+        <p id="srvCont"   className="text-center text-white sm:w-fit w-[80%] lg mt-6 md:text-2xl">Construction | Landscaping | Plowing Services in Wisconsin</p>
         </div>
 
-    <div className="flex flex-wrap gap-14 shadow-mainsh justify-evenly py-12 px-6">
+    <div  className="flex flex-wrap gap-14 shadow-mainsh justify-evenly py-12 px-6">
      <Link href={'/services/house-service'} className={`${comfortaa.className} card transition-all text-xl h-[200px] text-white   rounded-xl  `}>
         <Image
         alt="houseServImg"

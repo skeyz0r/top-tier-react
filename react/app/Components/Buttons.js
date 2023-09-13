@@ -9,7 +9,7 @@ const dmsans = DM_Sans({
 export default function Buttons()
 {
     return(
-    <div className="flex my-10  justify-center py-10 gap-10 flex-wrap">
+    <div className="flex my-10  justify-center py-10 md:gap-20 gap-10 flex-wrap">
         <div className="flex mb-3 flex-col items-center gap-2">
           <Image
           alt="quoteImg"
