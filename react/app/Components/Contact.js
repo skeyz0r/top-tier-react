@@ -17,6 +17,13 @@ const [cont, setCont] = useState({fname: '', lname: '', email: '', num: '', mes:
 const [send, setSend] = useState('Send');
 
 async function sendEmail(e) {
+    if(cont.fname === '' || cont.lname === '' || cont.email === '' || cont.num === '' || cont.mes === '')
+    {
+        setTimeout( () => setSend('Send'), 5000)
+        setSend('ERROR');
+    }
+    else
+    {
     setSend('Sending...')
     e.preventDefault();
    const res = await fetch('api', {
@@ -33,6 +40,7 @@ async function sendEmail(e) {
           {
             alert('ERROR ', res)
           }
+        }
    }
 
     return(
