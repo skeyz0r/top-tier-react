@@ -31,7 +31,7 @@ export default function House()
 {
 
     return(
-        <section className={`md:h-[95%]  pt-20 px-5 flex flex-col`}>
+        <section className={`md:h-[98%]  pt-20 px-5 flex flex-col`}>
          <h3 className={`${sarala.className} mt-20 text-2xl`}>Other Top Tier  Services:</h3>
              <div className="flex gap-8 "> <Link className="text-blue-700 hover:underline" href={'/services/landscaping'}>Landscapig Services</Link>
         <Link className="text-blue-700 hover:underline"  href={'/services/plowing'}>Plowing Services</Link></div>
