@@ -88,7 +88,7 @@ const navi = (prop) => {
     <h2 className={`${poppins.className} self-center py-10  text-green-600 text-3xl`}>Top Tier Services</h2>
      <li onClick={() => {navi(srv)}} className={`${comf.className} hover:shadow-sm sm:${vis} cursor-pointer text-black lg:text-xl py-3`}>Services</li>
      <li onClick={() => {navi(cont)}}className={`${comf.className} hover:shadow-sm  sm:${vis} cursor-pointer text-black lg:text-xl py-3`}>Contact</li>
-     <li className={`${opens.className} flex  text-green-600 md:text-2xl py-3`}><h3>1 (920) 636-0831 </h3>      
+     <li className={`${opens.className} flex  text-green-600 md:text-2xl py-3`}><h3>+1 (920) 636-0831 </h3>      
        <Link className="  ml-2" target="_blank" href={'https://www.facebook.com/groups/801973678237251'}>
        <GrFacebook size={30} color={'blue'}/>
        </Link>

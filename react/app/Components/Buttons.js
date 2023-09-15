@@ -17,7 +17,7 @@ export default function Buttons()
             width={80} className="h-[50px]"
             height={80} />
           <h2 className={`${dmsans.className} text-lg sm:text-2xl`}>FREE QUOTE</h2>
-          <span className="text-gray-500  sm:text-sm text-xs">Free qoutes on any selecte services.</span> 
+          <span className="text-gray-500  sm:text-sm text-xs">Free qoutes on any selected services.</span> 
           <span className="text-gray-500  sm:text-sm text-xs">Toll-Free call to get a quote now!</span>
         </div>
 
