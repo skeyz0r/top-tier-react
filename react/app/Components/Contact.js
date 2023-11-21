@@ -26,21 +26,7 @@ async function sendEmail(e) {
     {
     setSend('Sending...')
     e.preventDefault();
-   const res = await fetch('api', {
-      method: 'POST',
-      body: JSON.stringify(cont),
-  })
-          if(res.status === 200)
-          {
-            setTimeout( () => setSend('Send'), 7000)
-          setSend('Sent!');
-
-          }
-          else
-          {
-            alert('ERROR ', res)
-          }
-        }
+    }
    }
 
     return(
