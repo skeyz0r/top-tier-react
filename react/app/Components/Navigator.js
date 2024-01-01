@@ -78,7 +78,7 @@ const navi = (prop) => {
                     <h3 onClick={() => {   path.includes('/services') ? router.push('/') : srv.scrollIntoView({ behavior: "smooth", block: "start" });}} className={`${comf.className} hidden md:block  sm:${vis} cursor-pointer text-green-600 lg:text-xl py-3`}>Services</h3>
                     <h3 onClick={() => {   path.includes('/services') ? router.push('/') : cont.scrollIntoView({ behavior: "smooth", block: "start" });}} className={`${comf.className} hidden md:block  sm:${vis} cursor-pointer text-green-600 lg:text-xl py-3`}>Contact</h3>
         <h3 id='num' className={`${opens.className}  hidden md:block text-green-600 md:text-2xl py-3`}>1 (888) xxx-xxx</h3>
-        <Link className=" hidden md:block md:ml-0 ml-2" target="_blank" href={'https://www.facebook.com/groups/801973678237251'}><GrFacebook size={30} color={'blue'}/></Link>
+        <Link className=" hidden md:block md:ml-0 ml-2" target="_blank" href={'https://www.facebook.com/'}><GrFacebook size={30} color={'blue'}/></Link>
         <div className="md:hidden block mt-[13px]" id="menuToggle">
     <input checked={check} onChange={() => {setCheck(!check)}} type="checkbox" />
     <span></span>
