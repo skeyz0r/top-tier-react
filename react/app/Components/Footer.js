@@ -12,7 +12,7 @@ export default function Footer()
                     <p>|</p>
                     <Link className="hover:underline" href={'/policy/conditions'}>Conditions of Use</Link>
             </div>
-            <h2>Top Tier Services LLC ALL RIGHTS RESERVED</h2>
+            <h2>BOOST PRIME LLC ALL RIGHTS RESERVED</h2>
         </footer>
     )
 }
