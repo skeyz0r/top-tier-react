@@ -52,7 +52,7 @@ export default function Landscaping()
 
 <div className="md:mt-[5%] md:mr-[5%] w-fit mb-11 md:mb-0">
 <h1 className={`${poppinsB.className} shadow-line border-t-4 py-3 px-2 border-solid border-navYellow text-3xl`}>GET FREE QUOTE!</h1>
-<p className={`${poppinsB.className} text-center border-y-4 py-3 px-2 border-solid border-navYellow text-xl`}>1 (920)-636-08-31</p>
+<p className={`${poppinsB.className} text-center border-y-4 py-3 px-2 border-solid border-navYellow text-xl`}>1 (888)-xxx-xx-xx</p>
 </div>
 
 </div>       
