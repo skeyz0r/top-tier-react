@@ -33,8 +33,8 @@ async function sendEmail(e) {
         <div id="contF" className="py-10 flex flex-wrap justify-evenly">
          <div id="formCont" className="flex-col w-full">
          <div className="flex flex-col items-center justify-center">
-         <div className={`${opens.className} flex gap-3 items-center text-green-600 md:text-2xl py-3`}>CALL - <h2> 1 (920) 636-0831 </h2> OR VISIT 
-    <Link className="rounded-md" target="_blank" href={'https://www.facebook.com/groups/801973678237251'}><GrFacebook size={30} color={'blue'}/></Link>
+         <div className={`${opens.className} flex gap-3 items-center text-green-600 md:text-2xl py-3`}>CALL - <h2> 1 (888) xxx-xxx </h2> OR VISIT 
+    <Link className="rounded-md" target="_blank" href={'https://www.facebook.com/'}><GrFacebook size={30} color={'blue'}/></Link>
 </div>
    <div className="flex gap-2 items-center">
     <p className="title">You may also Contact us directly</p>
